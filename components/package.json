@@ -20,7 +20,5 @@
     "babel-loader": "^8.1.0",
     "react-is": "^16.13.1"
   },
-  "dependencies": {
-    "react": "^16.13.1"
-  }
+  "dependencies": {}
 }

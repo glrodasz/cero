@@ -3,6 +3,10 @@
 # Course Outline
 ## Hello world
 ### Storybook configuration [Components]
+- `npx sb init`
+- Choose that is a React project
+- `yarn add react`
+- `yarn storybook`
 ### Design Tokens [Components]
 ### Atoms & Molecules [Components]
 ### Redux configuration [Web]
