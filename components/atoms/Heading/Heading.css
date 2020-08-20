@@ -1,0 +1,23 @@
+.heading {
+	line-height: 1.25;
+}
+
+.color-default {
+	color: var(--east-bay);
+}
+
+.color-primary {
+	color: var(--medium-purple);
+}
+
+.size-md {
+	font-size: 21px;
+}
+
+.size-sm {
+	font-size: 18px;
+}
+
+.size-xs {
+	font-size: 16px;
+}

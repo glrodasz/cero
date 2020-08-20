@@ -5,10 +5,12 @@
 ### Storybook configuration [Components]
 - `npx sb init`
 - Choose that is a React project
-- `yarn add react`
 - `yarn storybook`
 ### Design Tokens [Components]
 ### Atoms & Molecules [Components]
+- Create Paragraph Atom
+- Create Button Molecule
+- Create Heading Atom
 ### Redux configuration [Web]
 ### Lint and styling [Components, Web]
 ### Folder Structure [Web]
@@ -44,6 +46,10 @@
 ## Bundling
 ### Webpack configuration [Web]
 ### Frontend Optimisation [Web]
+
+## Emailing layer
+### Email template system [Api]
+### Setup email service [Api]
 
 ## Continuous integration & deployment
 ### Docker
