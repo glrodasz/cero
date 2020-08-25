@@ -9,8 +9,8 @@
 ### Design Tokens [Components]
 ### Atoms & Molecules [Components]
 - Create Paragraph Atom
-- Create Button Molecule
 - Create Heading Atom
+- Create Button Molecule
 ### Redux configuration [Web]
 ### Lint and styling [Components, Web]
 ### Folder Structure [Web]
