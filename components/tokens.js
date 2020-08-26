@@ -1,4 +1,4 @@
-export const choices = {
+const choices = {
   colors: {
     brand: {
       mediumPurple: "#9879e9",
@@ -11,7 +11,7 @@ export const choices = {
 
     black: "#000",
     white: "#fff",
-
+  
     gray: {
       100: "#f7fafc",
       200: "#edf2f7",
@@ -261,8 +261,10 @@ export const choices = {
   },
 };
 
-export const decisions = {
+const decisions = {
   colors: {
     primary: choices.colors.brand.mediumPurple,
   },
 };
+
+module.exports = { choices, decisions }
