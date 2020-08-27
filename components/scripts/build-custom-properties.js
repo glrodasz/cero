@@ -26,7 +26,7 @@ function transformTokens(parentKey, object) {
 function buildCustomProperties() {
   const customProperties = `${transformTokens(null, choices)}${transformTokens(null, decisions)}`;
 
-  const data = [":root {", customProperties.trim(), "}"].join("\n");
+  const data = [":root {", customProperties.trim()].join("\n\t").concat("\n}");
 
   fs.writeFile("./tokens.css", data, "utf8", function (error) {
     if (error) {
