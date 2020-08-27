@@ -3,11 +3,11 @@
 }
 
 .color-default {
-	color: var(--east-bay);
+	color: var(--colors-brand-east-bay);
 }
 
 .color-primary {
-	color: var(--medium-purple);
+	color: var(--colors-brand-medium-purple);
 }
 
 .size-md {

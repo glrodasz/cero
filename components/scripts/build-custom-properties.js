@@ -1,68 +1,43 @@
-const { choices, decisions } = require('../tokens')
+const { choices, decisions } = require("../tokens");
 const fs = require("fs");
 
-// function getValue (object) {
-// 	if (typeof object === 'Object') {
-// 		getValue(object)
-// 	}
+// 2 - cambiar los keys a kebab-case
 
-// 	return 
-// }
+const toKebabCase = (string) =>
+  string.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, "$1-$2").toLowerCase();
 
-function buildCustomProperties() {
-	const choicesKeys = Object.keys(choices)
+function transformTokens(parentKey, object) {
+  const objectKeys = Object.keys(object);
 
-	// const choicesCustomProperties = choicesKeys.reduce((prev, curr) => {
-	// 	choices[curr]
-	// }, '')
+  return objectKeys.reduce((tokensTransformed, objectKey) => {
+    const value = object[objectKey];
 
-	let choicesStr = ''
+    if (typeof value === "object") {
+      const customProperty = parentKey
+        ? `${parentKey}-${objectKey}`
+        : `${objectKey}`;
 
-	if (typeof choices['colors'] === 'object') {
-		const colorsKeys = Object.keys(choices['colors'])
-
-		choicesStr = colorsKeys.reduce((prev, curr) => {
-
-			if (typeof choices['colors'][curr] === 'object') {
-				const brandKeys = Object.keys(choices['colors'][curr])
-
-				const colorsStr = brandKeys.reduce((prevBrandKeys, currBrandKeys) => {
-
-					const value = choices['colors'][curr][currBrandKeys]
-
-					return `
-					${prevBrandKeys}
-					--colors-${curr}-${currBrandKeys}: ${value};
-					`;
-				}, '')
-
-				return `
-					${prev}
-					${colorsStr}
-				`
-			} else {
-				return `
-					${prev}
-					--colors-${curr}: ${choices['colors'][curr]};
-				`
-			}
-		}, '')
-
-	}
-
-	const customProperties = choicesStr
-	
-	const data = `
-	:root {
-		${customProperties}	
-	}
-	`
-	
-	fs.writeFile("./tokens.css", data, 'utf8', function (error) {
-	  if (error) {
-		return console.error(error);
-	  }
-	});
+      return `${tokensTransformed}
+	  ${transformTokens(`${toKebabCase(customProperty)}`, value)}`;
+    }
+    return `${tokensTransformed}
+	--${parentKey}-${toKebabCase(objectKey)}: ${value};`;
+  }, "");
 }
 
-buildCustomProperties()
+function buildCustomProperties() {
+  const customProperties = `
+	${transformTokens(null, choices)}
+	${transformTokens(null, decisions)}
+  `;
+
+  const data = [":root {", customProperties.trim(), "}"].join("\n");
+
+  fs.writeFile("./tokens.css", data, "utf8", function (error) {
+    if (error) {
+      return console.error(error);
+    }
+  });
+}
+
+buildCustomProperties();
