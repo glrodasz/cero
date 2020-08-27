@@ -17,21 +17,16 @@ function transformTokens(parentKey, object) {
         ? `${parentKey}-${objectKey}`
         : `${objectKey}`;
 
-      return `${tokensTransformed}
-	  ${transformTokens(`${toKebabCase(customProperty)}`, value)}`;
+      return `${tokensTransformed}\n\t${transformTokens(`${toKebabCase(customProperty)}`, value)}`;
     }
-    return `${tokensTransformed}
-	--${parentKey}-${toKebabCase(objectKey)}: ${value};`;
+    return `${tokensTransformed}\n\t--${parentKey}-${toKebabCase(objectKey)}: ${value};`;
   }, "");
 }
 
 function buildCustomProperties() {
-  const customProperties = `
-	${transformTokens(null, choices)}
-	${transformTokens(null, decisions)}
-  `;
+  const customProperties = `${transformTokens(null, choices)}${transformTokens(null, decisions)}`;
 
-  const data = [":root {", customProperties.trim(), "}"].join("\n");
+  const data = [":root {", customProperties.trim()].join("\n\t").concat("\n}");
 
   fs.writeFile("./tokens.css", data, "utf8", function (error) {
     if (error) {
