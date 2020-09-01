@@ -164,10 +164,7 @@ const choices = {
     mono: ['"Roboto Mono"', "Consolas", "monospace"],
   },
   fontSize: {
-    base: {
-      mobile: "16px",
-      desktop: "18px",
-    },
+    base: "10px",
     xs: ".75rem",
     sm: ".875rem",
     md: "1rem",

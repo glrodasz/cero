@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-custom-properties": "node ./scripts/build-custom-properties",
+    "storybook": "start-storybook -p 6006 -s ./assets",
+    "build-tokens": "node ./scripts/build-tokens",
     "build-storybook": "build-storybook"
   },
   "keywords": [],

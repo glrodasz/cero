@@ -152,9 +152,7 @@
 	--font-family-mono-1: Consolas;
 	--font-family-mono-2: monospace;
 	
-	
-	--font-size-base-mobile: 16px;
-	--font-size-base-desktop: 18px;
+	--font-size-base: 10px;
 	--font-size-xs: .75rem;
 	--font-size-sm: .875rem;
 	--font-size-md: 1rem;

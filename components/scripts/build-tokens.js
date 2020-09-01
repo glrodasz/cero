@@ -1,8 +1,6 @@
 const { choices, decisions } = require("../tokens");
 const fs = require("fs");
 
-// 2 - cambiar los keys a kebab-case
-
 const toKebabCase = (string) =>
   string.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, "$1-$2").toLowerCase();
 
@@ -23,7 +21,7 @@ function transformTokens(parentKey, object) {
   }, "");
 }
 
-function buildCustomProperties() {
+function buildTokens() {
   const customProperties = `${transformTokens(null, choices)}${transformTokens(null, decisions)}`;
 
   const data = [":root {", customProperties.trim()].join("\n\t").concat("\n}");
@@ -35,4 +33,4 @@ function buildCustomProperties() {
   });
 }
 
-buildCustomProperties();
+buildTokens();

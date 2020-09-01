@@ -57,3 +57,7 @@
 ### Docker
 ### Kubernetes
 ### Jenkins
+
+
+# Notes
+- TODO: Decicidr cómo debería comportarse nuesto Atomic Design, respecto a que debería ser un Atomo y una Molecula.
