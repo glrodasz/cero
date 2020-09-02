@@ -4,10 +4,11 @@ import classNames from "classnames";
 
 import "./Button.css";
 
-const Button = ({ type, children }) => (
+const Button = ({ type, children, isBlock }) => (
   <button
     className={classNames("button", {
       [`type-${type}`]: type,
+      "is-block": isBlock,
     })}
   >
     {children}
@@ -17,10 +18,7 @@ const Button = ({ type, children }) => (
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   type: PropTypes.oneOf[("primary", "secondary", "tertiary")],
-};
-
-Button.defaultProps = {
-  type: "primary",
+  isBlock: PropTypes.boolean,
 };
 
 export default Button;

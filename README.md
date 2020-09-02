@@ -60,4 +60,6 @@
 
 
 # Notes
-- TODO: Decicidr cómo debería comportarse nuesto Atomic Design, respecto a que debería ser un Atomo y una Molecula.
+## Atomic Design
+- Atom: A atom is a component that composed by an unique Atom with or without HTML tags or just HTML tags.
+- Molecule: A molecule is a component that is composed by at least 2 diffent atoms.
