@@ -4,14 +4,12 @@
   justify-content: center;
   border: 1px solid var(--colors-transparent);
   padding: 10px 20px;
-  border-radius: 30px;
+  border-radius: 30px; /* FIXME: use design token */
   box-shadow: 0px 4px 5px var(--colors-brand-white-lilac);
   cursor: pointer;
   transition: all 0.5s ease;
   font-size: var(--font-size-2xl);
   max-width: 300px;
-  white-space: nowrap;
-  /* TODO: Implement min width behaviour */
   width: 100%;
   min-width: max-content;
 }

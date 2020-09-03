@@ -1,9 +1,11 @@
-import React from "react";
-import ButtonIcon from "../../molecules/ButtonIcon";
+import React from 'react'
+import ButtonIcon from '../../molecules/ButtonIcon'
 
 export default {
-  title: "Molecules/ButtonIcon",
+  title: 'Molecules/ButtonIcon',
   component: ButtonIcon,
-};
+}
 
-export const Default = () => <ButtonIcon icon="rightArrow">Button icon</ButtonIcon>;
+export const Default = () => (
+  <ButtonIcon icon="rightArrow">Button icon</ButtonIcon>
+)

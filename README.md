@@ -7,14 +7,19 @@
 - Choose that is a React project
 - `yarn storybook`
 ### Design Tokens [Components]
-- Create tokens.js file
+- Create tokens/index.js file
 - Create script to tranform the tokens into custom properties
+- Add brand colors to tokens*
 ### Atoms & Molecules [Components]
-- Create Paragraph Atom
+- Create Paragraph Atom*
 - Create Heading Atom
 - Create Button Atom
-### Redux configuration [Web]
+- Create Icon Atom
+- Create Picture Atom*
+- Create ButtonIcon Molecule
 ### Lint and styling [Components, Web]
+- Add ESLint rules and Prettier
+### Redux configuration [Web]
 ### Folder Structure [Web]
 ### Environment variables [Web]
 

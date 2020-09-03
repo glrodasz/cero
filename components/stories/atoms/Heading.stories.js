@@ -1,10 +1,10 @@
-import React from "react";
-import Heading from "../../atoms/Heading";
+import React from 'react'
+import Heading from '../../atoms/Heading'
 
 export default {
-  title: "Atoms/Heading",
+  title: 'Atoms/Heading',
   component: Heading,
-};
+}
 
 export const Default = () => <Heading>Heading</Heading>
 export const ColorPrimary = () => <Heading color="primary">Heading</Heading>

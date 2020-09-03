@@ -1,11 +1,16 @@
-import React from "react";
-import { mapType } from "./helpers";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { mapType } from './helpers'
 
 // TODO: Use the Atom Picture
 const Icon = ({ type }) => (
   <div>
     <img src={mapType(type)}></img>
   </div>
-);
+)
 
-export default Icon;
+Icon.propTypes = {
+  type: PropTypes.string.isRequired,
+}
+
+export default Icon
