@@ -1,8 +1,13 @@
 :root {
 	--colors-brand-medium-purple: #9879e9;
-	--colors-brand-white: #fff;
+	--colors-brand-mandy: #eb4e58;
 	--colors-brand-white-lilac: #e8e8e8;
+	--colors-brand-hint-of-red: #f9f9f9;
+	--colors-brand-romance: #fcfdfd;
 	--colors-brand-east-bay: #455970;
+	--colors-brand-regent-gray: #7e858c;
+	--colors-brand-loblolly: #b7b7b7;
+	--colors-brand-blue-moon: #eff1fd;
 	--colors-transparent: transparent;
 	--colors-black: #000;
 	--colors-white: #fff;
@@ -205,13 +210,6 @@
 	--shadows-up-2xl: 0 -25px 50px -12px rgba(0, 0, 0, 0.25);
 	--shadows-up-inner: inset 0 -2px 4px 0 rgba(0, 0, 0, 0.06);
 	
-	--min-height-0: 0;
-	--min-height-full: 100%;
-	--min-height-screen: 100vh;
-	
-	--min-width-0: 0;
-	--min-width-full: 100%;
-	
 	--opacity-0: 0;
 	--opacity-25: 0.25;
 	--opacity-50: 0.5;
@@ -221,7 +219,7 @@
 	--border-radius-none: 0;
 	--border-radius-sm: 0.125rem;
 	--border-radius-md: 0.25rem;
-	--border-radius-lg: 0.5rem;
+	--border-radius-lg: 30px;
 	--border-radius-full: 9999px;
 	
 	--z-index-0: 0;
@@ -233,4 +231,12 @@
 	--z-index-auto: auto;
 	
 	--colors-primary: #9879e9;
+	--colors-primary-highlight: #eff1fd;
+	--colors-secondary: #eb4e58;
+	--colors-font-base: #455970;
+	--colors-font-muted: #7e858c;
+	--colors-font-highlight: #b7b7b7;
+	
+	--backgrounds-primary: #f9f9f9;
+	--backgrounds-highlight: #fcfdfd;
 }

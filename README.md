@@ -17,8 +17,13 @@
 - Create Icon Atom
 - Create Picture Atom*
 - Create ButtonIcon Molecule
+- Create Spacer's Layout
 ### Lint and styling [Components, Web]
-- Add ESLint rules and Prettier
+- Add [EditorConfig](https://github.com/airbnb/javascript/blob/master/.editorconfig)
+- Add ESLint and Prettier
+1. Install ESLint and create a config file following the instructions [here](https://eslint.org/docs/user-guide/getting-started#installation-and-usage)
+2. Intall the prettier configuration along ESLint following [these](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration) instructions
+3. Finally configure the precommit hook with lint-staged [here](https://prettier.io/docs/en/precommit.html#option-1-lint-stagedhttpsgithubcomokonetlint-staged)
 ### Redux configuration [Web]
 ### Folder Structure [Web]
 ### Environment variables [Web]

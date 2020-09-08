@@ -18,7 +18,7 @@
 }
 
 .type-primary {
-  background: var(--colors-brand-medium-purple);
+  background: var(--colors-primary);
   color: var(--colors-white);
 }
 
