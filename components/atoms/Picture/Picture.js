@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 
 import { getWidth } from './helpers'
 
+import './Picture.css'
+
 const Picture = ({ src, width }) => (
   <picture className="picture">
     <img src={src} style={{ maxWidth: getWidth(width) }} />

@@ -6,16 +6,19 @@
 - `npx sb init`
 - Choose that is a React project
 - `yarn storybook`
+- Add font base size to `main.css` and a reset (https://jgthms.com/minireset.css/, https://github.com/necolas/normalize.css/)*
+- Add typography*
 ### Design Tokens [Components]
 - Create tokens/index.js file
-- Create script to tranform the tokens into custom properties
-- Add brand colors to tokens*
+- Create `build-tokens` script
+- Add brand colors to tokens
+- Add the rest of the tokens based on the project*
 ### Atoms & Molecules [Components]
 - Create Paragraph Atom*
 - Create Heading Atom
 - Create Button Atom
 - Create Icon Atom
-- Create Picture Atom*
+- Create Picture Atom
 - Create ButtonIcon Molecule
 - Create Spacer's Layout
 ### Lint and styling [Components, Web]
@@ -71,5 +74,5 @@
 
 # Notes
 ## Atomic Design
-- Atom: A atom is a component that composed by an unique Atom with or without HTML tags or just HTML tags.
+- Atom: A atom is a component that composed by an unique Atom with/without HTML tags or just HTML tags.
 - Molecule: A molecule is a component that is composed by at least 2 diffent atoms.

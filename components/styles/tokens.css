@@ -145,17 +145,9 @@
 	--screens-max-xl: 1279px;
 	
 	
-	--font-family-serif-0: Roboto Slab;
-	--font-family-serif-1: "Times New Roman";
-	--font-family-serif-2: serif;
-	
-	--font-family-sans-0: Apercu;
+	--font-family-sans-0: Quicksand;
 	--font-family-sans-1: Arial;
 	--font-family-sans-2: sans-serif;
-	
-	--font-family-mono-0: "Roboto Mono";
-	--font-family-mono-1: Consolas;
-	--font-family-mono-2: monospace;
 	
 	--font-size-base: 10px;
 	--font-size-xs: .75rem;

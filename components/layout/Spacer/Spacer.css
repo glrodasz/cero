@@ -1,0 +1,3 @@
+.is-visible {
+  border: 2px dashed var(--colors-primary);
+}

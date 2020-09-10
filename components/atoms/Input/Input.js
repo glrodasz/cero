@@ -15,6 +15,8 @@ const Input = ({ type, value, onChange, placeholder }) => (
 
 Input.defaultProps = {
   type: 'text',
+  value: '',
+  placeholder: '',
 }
 
 Input.propTypes = {

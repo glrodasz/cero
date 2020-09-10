@@ -7,5 +7,5 @@ export default {
 }
 
 export const Default = () => (
-  <ButtonIcon icon="rightArrow">Button icon</ButtonIcon>
+  <ButtonIcon icon="arrowRight">Button icon</ButtonIcon>
 )

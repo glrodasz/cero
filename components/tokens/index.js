@@ -166,9 +166,9 @@ const choices = {
   },
   // FIXME: Add proper font family
   fontFamily: {
-    serif: ['Roboto Slab', '"Times New Roman"', 'serif'],
-    sans: ['Apercu', 'Arial', 'sans-serif'],
-    mono: ['"Roboto Mono"', 'Consolas', 'monospace'],
+    // serif: ['Roboto Slab', '"Times New Roman"', 'serif'],
+    sans: ['Quicksand', 'Arial', 'sans-serif'],
+    // mono: ['"Roboto Mono"', 'Consolas', 'monospace'],
   },
   fontSize: {
     base: '10px',
