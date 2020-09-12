@@ -17,7 +17,7 @@ function transformTokens(parentKey, object) {
 
       return `${tokensTransformed}\n\t--${toKebabCase(
         customProperty
-      )}: ${value.join()};`
+      )}: ${value.join(', ')};`
     } else if (typeof value === 'object') {
       const customProperty = parentKey
         ? `${parentKey}-${objectKey}`
