@@ -8,9 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@glrodasz/components": "^0.1.1",
+    "@glrodasz/components": "0.1.2",
     "next": "9.5.3",
-    "next-transpile-modules": "^4.1.0",
+    "next-transpile-modules": "4.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   }

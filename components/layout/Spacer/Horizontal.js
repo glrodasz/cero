@@ -1,13 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
+import { getSize } from './helpers'
 
 import styles from './Spacer.module.css'
-
-// FIXME: Use tokens.css intead
-import { choices } from '../../tokens'
-// TODO: Move to helpers.js
-const getSize = (size) => choices.spacing[size]
 
 const Horizontal = ({ size, isVisible }) => (
   <div

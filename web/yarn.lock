@@ -1014,10 +1014,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@glrodasz/components@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@glrodasz/components/-/components-0.1.1.tgz#7d5e4076fc556d758429b4a1d845ab8b8abd1c48"
-  integrity sha512-2KErNdekFhW4Prkw58Fws8R4+7oCqXowXJJDS1Q7QDPNtQEaCr7gQ2RmB9T788tO+TTu2l9nJxU/8yKpNg2FJw==
+"@glrodasz/components@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@glrodasz/components/-/components-0.1.2.tgz#6b54ef15956a28bf546f06adb890c2dc252a1e3e"
+  integrity sha512-o/Zp0W8nlXwX1J9kw6wUEAMs12EAKo5r4rCHRIO7cJuGzSL/+T3nerDtxBmtK8I3YtzLGCcYqDwyLhhb7Ne2Qg==
 
 "@next/react-dev-overlay@9.5.3":
   version "9.5.3"
@@ -3368,7 +3368,7 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next-transpile-modules@^4.1.0:
+next-transpile-modules@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/next-transpile-modules/-/next-transpile-modules-4.1.0.tgz#b2d4bd29f3d4179014f7615720f360fdeec67ff7"
   integrity sha512-brb9S2Dq7l01fV0fdZw1pO2cWMu7fFTclIV2nccmX2Jzwtz1c9iScPMqGyWP6/wglOPOColoJlHzOrSG6cnEIQ==

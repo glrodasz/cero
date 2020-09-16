@@ -4,13 +4,9 @@ import classNames from 'classnames'
 
 import Horizontal from './Horizontal'
 import Vertical from './Vertical'
+import { getSize } from './helpers'
 
 import styles from './Spacer.module.css'
-
-// FIXME: Use tokens.css intead
-import { choices } from '../../tokens'
-// TODO: Move to helpers.js
-const getSize = (size) => choices.spacing[size]
 
 const Spacer = ({ size, isVisible }) => (
   <div
