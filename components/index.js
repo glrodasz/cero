@@ -1,15 +1,13 @@
 // Layout
-import Spacer from './layout/Spacer'
+export { default as Spacer } from './layout/Spacer'
 
 // Atoms
-import Button from './atoms/Button'
-import Heading from './atoms/Heading'
-import Icon from './atoms/Icon'
-import Input from './atoms/Input'
-import Picture from './atoms/Picture'
+export { default as Button } from './atoms/Button'
+export { default as Heading } from './atoms/Heading'
+export { default as Icon } from './atoms/Icon'
+export { default as Input } from './atoms/Input'
+export { default as Picture } from './atoms/Picture'
 
 // Molecules
-import ButtonIcon from './molecules/ButtonIcon'
-import Dropdown from './molecules/Dropdown'
-
-export { Spacer, Button, Heading, Icon, Input, Picture, ButtonIcon, Dropdown }
+export { default as ButtonIcon } from './molecules/ButtonIcon'
+export { default as Dropdown } from './molecules/Dropdown'
