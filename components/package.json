@@ -1,7 +1,8 @@
 {
   "name": "@glrodasz/components",
   "version": "0.1.1",
-  "description": "A components library to create apps from zero to production.",
+  "private": false,
+  "description": "A components library to create apps from zero to production",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,26 +11,25 @@
     "build-tokens": "node ./scripts/build-tokens",
     "build-storybook": "build-storybook"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["react", "components"],
+  "author": "Guillermo Rodas <@glrodasz>",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.11.1",
-    "@storybook/addon-actions": "^6.0.21",
-    "@storybook/addon-essentials": "^6.0.21",
-    "@storybook/addon-links": "^6.0.21",
-    "@storybook/react": "^6.0.21",
-    "babel-loader": "^8.1.0",
-    "eslint": "^7.8.1",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.6",
-    "husky": ">=4",
-    "lint-staged": ">=10",
-    "prettier": "^2.1.1",
-    "react-is": "^16.13.1"
+    "@babel/core": "7.11.1",
+    "@storybook/addon-actions": "6.0.21",
+    "@storybook/addon-essentials": "6.0.21",
+    "@storybook/addon-links": "6.0.21",
+    "@storybook/react": "6.0.21",
+    "babel-loader": "8.1.0",
+    "eslint": "7.8.1",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.20.6",
+    "husky": "4.2.5",
+    "lint-staged": "10.3.0",
+    "prettier": "2.1.1",
+    "react-is": "16.13.1"
   },
-  "dependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

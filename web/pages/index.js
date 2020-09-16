@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-import Button from '@glrodasz/components'
+import { Button } from '@glrodasz/components'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Button>Hello world</Button>
+      <Button type="secondary">Hello world</Button>
 
       <main className={styles.main}>
         <h1 className={styles.title}>

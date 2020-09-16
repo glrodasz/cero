@@ -6,7 +6,7 @@
 - `npx sb init`
 - Choose that is a React project
 - `yarn storybook`
-- Add font base size to `main.css` and a reset (https://jgthms.com/minireset.css/, https://github.com/necolas/normalize.css/)*
+- Add font base size to `main.css` and a reset `https://jgthms.com/minireset.css`
 - Add typography*
 ### Design Tokens [Components]
 - Create tokens/index.js file

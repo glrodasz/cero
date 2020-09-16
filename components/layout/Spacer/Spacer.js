@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import Horizontal from './Horizontal'
 import Vertical from './Vertical'
 
-import './Spacer.css'
+import styles from './Spacer.module.css'
 
 // FIXME: Use tokens.css intead
 import { choices } from '../../tokens'
@@ -14,8 +14,8 @@ const getSize = (size) => choices.spacing[size]
 
 const Spacer = ({ size, isVisible }) => (
   <div
-    className={classNames('spacer', {
-      'is-visible': isVisible,
+    className={classNames(styles.spacer, {
+      [styles['is-visible']]: isVisible,
     })}
     style={{
       display: 'inline-block',
