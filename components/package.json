@@ -1,6 +1,6 @@
 {
   "name": "@glrodasz/components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "A components library to create apps from zero to production",
   "main": "index.js",
@@ -11,7 +11,10 @@
     "build-tokens": "node ./scripts/build-tokens",
     "build-storybook": "build-storybook"
   },
-  "keywords": ["react", "components"],
+  "keywords": [
+    "react",
+    "components"
+  ],
   "author": "Guillermo Rodas <@glrodasz>",
   "license": "MIT",
   "devDependencies": {
