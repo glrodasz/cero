@@ -6,7 +6,7 @@
 - `npx sb init`
 - Choose that is a React project
 - `yarn storybook`
-- Add font base size to `main.css` and a reset (https://jgthms.com/minireset.css/, https://github.com/necolas/normalize.css/)*
+- Add font base size to `main.css` and a reset `https://jgthms.com/minireset.css`
 - Add typography*
 ### Design Tokens [Components]
 - Create tokens/index.js file
@@ -27,6 +27,11 @@
 1. Install ESLint and create a config file following the instructions [here](https://eslint.org/docs/user-guide/getting-started#installation-and-usage)
 2. Intall the prettier configuration along ESLint following [these](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration) instructions
 3. Finally configure the precommit hook with lint-staged [here](https://prettier.io/docs/en/precommit.html#option-1-lint-stagedhttpsgithubcomokonetlint-staged)
+### Creating a NPM package [Components]
+### Configure Semantic Release [Components]
+### Creating snapshot tests [Components]
+
+## Welcome to the Web
 ### Redux configuration [Web]
 ### Folder Structure [Web]
 ### Environment variables [Web]

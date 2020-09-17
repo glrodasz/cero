@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import './Heading.css'
+import styles from './Heading.module.css'
 
 const Heading = ({ children, color, size }) => (
   <heading
-    className={classNames('heading', {
-      [`color-${color}`]: color,
-      [`size-${size}`]: size,
+    className={classNames(styles.heading, {
+      [styles[`color-${color}`]]: color,
+      [styles[`size-${size}`]]: size,
     })}
   >
     {children}
