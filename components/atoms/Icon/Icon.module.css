@@ -8,6 +8,6 @@
 }
 
 .has-background {
-  background: var(--colors-primary-highlight);
+  background: var(--color-primary-highlight);
   border-radius: var(--border-radius-full);
 }

@@ -1,9 +1,14 @@
 .input {
-  border: 1px solid var(--colors-primary);
+  border: 1px solid var(--color-primary);
   border-radius: var(--border-radius-lg);
   padding: 12px 17px;
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-md);
+  height: 38px;
 }
 
 .input::placeholder {
-  color: var(--colors-font-highlight);
+  color: var(--color-font-highlight);
 }

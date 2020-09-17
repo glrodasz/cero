@@ -12,8 +12,8 @@
 }
 
 .dropdown-select {
-  border: 1px solid var(--colors-primary);
+  border: var(--border-width-default) solid var(--color-primary);
   border-radius: var(--border-radius-lg);
   padding: 10px 30px 10px 20px;
-  color: var(--colors-font-base);
+  color: var(--color-font-base);
 }

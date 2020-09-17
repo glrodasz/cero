@@ -18,7 +18,7 @@ export default function Home() {
         flexDirection: "column",
       }}
     >
-      <Heading>Cuentame sobre ti</Heading>
+      <Heading size="xl">Cuentame sobre ti</Heading>
       <Spacer.Horizontal size="md" />
       <Input
         value={formValues.name}
@@ -45,7 +45,7 @@ export default function Home() {
           alignItems: "center",
         }}
       >
-        <Button type="primary">Competa tu perfil</Button>
+        <Button type="primary">Completa tu perfil</Button>
         <Spacer.Horizontal size="md" />
         <Button style={{}} type="tertiary">
           Saltar este paso por ahora

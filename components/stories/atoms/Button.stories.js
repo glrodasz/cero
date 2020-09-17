@@ -6,8 +6,27 @@ export default {
   component: Button,
 }
 
-export const Primary = () => <Button type="primary">Button primary</Button>
-export const Secondary = () => (
-  <Button type="secondary">Button secondary</Button>
-)
-export const Tertiary = () => <Button type="tertiary">Button tertiary</Button>
+const Template = (props) => <Button {...props} />
+
+export const Default = Template.bind({})
+Default.args = {
+  children: 'Default Button',
+}
+
+export const Primary = Template.bind({})
+Primary.args = {
+  type: 'primary',
+  children: 'Primary Button',
+}
+
+export const Secondary = Template.bind({})
+Secondary.args = {
+  type: 'secondary',
+  children: 'Secondary Button',
+}
+
+export const Tertiary = Template.bind({})
+Tertiary.args = {
+  type: 'tertiary',
+  children: 'Tertiary Button',
+}
