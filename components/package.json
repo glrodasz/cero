@@ -1,16 +1,21 @@
 {
   "name": "@glrodasz/components",
-  "version": "0.1.2",
+  "version": "0.0.0-development",
   "private": false,
   "description": "A components library to create apps from zero to production",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glrodasz/cero-a-produccion.git"
+  },
   "scripts": {
     "dev": "yarn storybook",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "storybook": "start-storybook -p 6006 -s ./assets",
     "build-tokens": "node ./scripts/build-tokens",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "react",
@@ -33,7 +38,8 @@
     "lint-staged": "10.3.0",
     "prettier": "2.1.1",
     "react-is": "16.13.1",
-    "minireset.css": "0.0.6"
+    "minireset.css": "0.0.6",
+    "semantic-release": "^17.1.2"
   },
   "peerDependencies": {
     "react": "^16.13.1",

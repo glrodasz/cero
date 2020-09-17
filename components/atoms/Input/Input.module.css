@@ -6,7 +6,7 @@
   font-weight: var(--font-weight-medium);
   font-family: var(--font-family-sans);
   font-size: var(--font-size-md);
-  height: 38px;
+  height: var(--input-height);
 }
 
 .input::placeholder {

@@ -46,4 +46,5 @@
   padding: 0;
   border-bottom: 1px solid var(--color-primary);
   border-radius: var(--border-radius-none);
+  height: auto;
 }

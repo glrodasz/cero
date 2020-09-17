@@ -7,7 +7,11 @@ import styles from './Dropdown.module.css'
 const Dropdown = ({ options, value, onChange }) => (
   <div className={styles.dropdown}>
     <Icon type="angleDown" hasBackground />
-    <select className="dropdown-select" onChange={onChange} value={value}>
+    <select
+      className={styles['dropdown-select']}
+      onChange={onChange}
+      value={value}
+    >
       {options.map(({ text, value }) => (
         <option key={value} value={value}>
           {text}
