@@ -21,7 +21,7 @@
     "react",
     "components"
   ],
-  "author": "Guillermo Rodas <@glrodasz>",
+  "author": "Guillermo Rodas <glrodasz@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.11.1",
@@ -39,7 +39,7 @@
     "prettier": "2.1.1",
     "react-is": "16.13.1",
     "minireset.css": "0.0.6",
-    "semantic-release": "^17.1.2"
+    "semantic-release": "17.1.2"
   },
   "peerDependencies": {
     "react": "^16.13.1",

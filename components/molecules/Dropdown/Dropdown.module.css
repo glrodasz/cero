@@ -1,11 +1,9 @@
 .dropdown {
   display: inline-block;
   position: relative;
-  height: var(--input-height);
 }
 
-/* FIXME: wrap .icon as a global class with css modules */
-.dropdown .icon {
+.dropdown-icon {
   position: absolute;
   right: 1px;
   pointer-events: none;
@@ -18,4 +16,5 @@
   border-radius: var(--border-radius-lg);
   padding: 10px 30px 10px 20px;
   color: var(--color-font-base);
+  height: var(--input-height);
 }
