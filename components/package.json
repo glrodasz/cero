@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "yarn storybook",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint .",
     "storybook": "start-storybook -p 6006 -s ./assets",
     "build-tokens": "node ./scripts/build-tokens",
@@ -24,26 +24,33 @@
   "author": "Guillermo Rodas <glrodasz@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.11.1",
+    "@babel/core": "7.11.6",
+    "@babel/preset-env": "7.11.5",
+    "@babel/preset-react": "7.10.4",
     "@storybook/addon-actions": "6.0.21",
     "@storybook/addon-essentials": "6.0.21",
     "@storybook/addon-links": "6.0.21",
+    "@storybook/addon-storyshots": "6.0.21",
     "@storybook/react": "6.0.21",
+    "babel-jest": "26.3.0",
     "babel-loader": "8.1.0",
     "eslint": "7.8.1",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.6",
     "husky": "4.2.5",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "26.4.2",
     "lint-staged": "10.3.0",
+    "minireset.css": "0.0.6",
     "prettier": "2.1.1",
     "react-is": "16.13.1",
-    "minireset.css": "0.0.6",
+    "react-test-renderer": "16.13.1",
     "semantic-release": "17.1.2"
   },
   "peerDependencies": {
-    "react": "^16.13.1",
-    "minireset.css": "^0.0.6"
+    "minireset.css": "^0.0.6",
+    "react": "^16.13.1"
   },
   "husky": {
     "hooks": {

@@ -20,11 +20,12 @@ const Vertical = ({ size, maxHeight, isVisible }) => (
 )
 
 Vertical.defaultProps = {
+  size: 'none',
   maxHeight: '100%',
 }
 
 Vertical.propTypes = {
-  size: PropTypes.number.isRequired,
+  size: PropTypes.string,
   isVisible: PropTypes.bool,
   maxHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 }

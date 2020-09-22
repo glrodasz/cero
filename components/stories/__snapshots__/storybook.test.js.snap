@@ -1,0 +1,510 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/Button Default 1`] = `
+<button
+  className="button is-block"
+  onClick={[Function]}
+>
+  Default Button
+</button>
+`;
+
+exports[`Storyshots Atoms/Button Primary 1`] = `
+<button
+  className="button type-primary is-block"
+  onClick={[Function]}
+>
+  Primary Button
+</button>
+`;
+
+exports[`Storyshots Atoms/Button Secondary 1`] = `
+<button
+  className="button type-secondary is-block"
+  onClick={[Function]}
+>
+  Secondary Button
+</button>
+`;
+
+exports[`Storyshots Atoms/Button Tertiary 1`] = `
+<button
+  className="button type-tertiary"
+  onClick={[Function]}
+>
+  Tertiary Button
+</button>
+`;
+
+exports[`Storyshots Atoms/Heading Colors 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <heading
+    className="heading color-default size-md"
+  >
+    Default Color
+  </heading>
+  <heading
+    className="heading color-primary size-md"
+  >
+    Primary Color
+  </heading>
+</div>
+`;
+
+exports[`Storyshots Atoms/Heading Default 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <heading
+    className="heading color-default size-md"
+  >
+    Default Heading
+  </heading>
+</div>
+`;
+
+exports[`Storyshots Atoms/Heading Sizes 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <heading
+    className="heading color-default size-xs"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+  <heading
+    className="heading color-default size-md"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+  <heading
+    className="heading color-default size-lg"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+  <heading
+    className="heading color-default size-xl"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+  <heading
+    className="heading color-default size-2xl"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+</div>
+`;
+
+exports[`Storyshots Atoms/Icon Angle Down 1`] = `
+<div
+  className="icon"
+  style={
+    Object {
+      "height": 26,
+      "width": 26,
+    }
+  }
+>
+  <picture
+    className="picture"
+  >
+    <img
+      src="/icons//angle-down.svg"
+      style={
+        Object {
+          "maxWidth": 26,
+        }
+      }
+    />
+  </picture>
+</div>
+`;
+
+exports[`Storyshots Atoms/Icon Arrow Right 1`] = `
+<div
+  className="icon"
+  style={
+    Object {
+      "height": 26,
+      "width": 26,
+    }
+  }
+>
+  <picture
+    className="picture"
+  >
+    <img
+      src="/icons//arrow-right.svg"
+      style={
+        Object {
+          "maxWidth": 26,
+        }
+      }
+    />
+  </picture>
+</div>
+`;
+
+exports[`Storyshots Atoms/Icon Has Background 1`] = `
+<div
+  className="icon has-background"
+  style={
+    Object {
+      "height": 26,
+      "width": 26,
+    }
+  }
+>
+  <picture
+    className="picture"
+  >
+    <img
+      src="/icons//angle-down.svg"
+      style={
+        Object {
+          "maxWidth": 26,
+        }
+      }
+    />
+  </picture>
+</div>
+`;
+
+exports[`Storyshots Atoms/Input Text 1`] = `
+<input
+  className="input"
+  onChange={[Function]}
+  placeholder="Nombres"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Storyshots Atoms/Picture Default 1`] = `
+<picture
+  className="picture"
+>
+  <img
+    src="https://placeimg.com/400/400/any"
+    style={
+      Object {
+        "maxWidth": 200,
+      }
+    }
+  />
+</picture>
+`;
+
+exports[`Storyshots Layout/Spacer/Default Default 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": 0,
+      "width": 0,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Default Extra Small 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": 5,
+      "width": 5,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Default Large 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": 40,
+      "width": 40,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Default Medium 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": 20,
+      "width": 20,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Default Small 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": 15,
+      "width": 15,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Horizontal Default 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "block",
+      "height": 0,
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Horizontal Extra Small 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "block",
+      "height": 5,
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Horizontal Large 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "block",
+      "height": 40,
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Horizontal Medium 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "block",
+      "height": 20,
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Horizontal Small 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "block",
+      "height": 15,
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Vertical Default 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "block",
+      "height": "100vh",
+      "maxHeight": 200,
+      "width": 0,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Vertical Extra Small 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "block",
+      "height": "100vh",
+      "maxHeight": 200,
+      "width": 5,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Vertical Large 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "block",
+      "height": "100vh",
+      "maxHeight": 200,
+      "width": 40,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Vertical Medium 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "block",
+      "height": "100vh",
+      "maxHeight": 200,
+      "width": 20,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer/Vertical Small 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "block",
+      "height": "100vh",
+      "maxHeight": 200,
+      "width": 15,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Molecules/ButtonIcon Default 1`] = `
+<button
+  className="button type-secondary"
+  onClick={[Function]}
+>
+  Button icon
+  <div
+    className="spacer"
+    style={
+      Object {
+        "display": "block",
+        "height": "100vh",
+        "maxHeight": "100%",
+        "width": 5,
+      }
+    }
+  />
+  <div
+    className="icon"
+    style={
+      Object {
+        "height": 26,
+        "width": 26,
+      }
+    }
+  >
+    <picture
+      className="picture"
+    >
+      <img
+        src="/icons//arrow-right.svg"
+        style={
+          Object {
+            "maxWidth": 26,
+          }
+        }
+      />
+    </picture>
+  </div>
+</button>
+`;
+
+exports[`Storyshots Molecules/Dropdown Default 1`] = `
+<div
+  className="dropdown"
+>
+  <div
+    className="dropdown-icon icon has-background"
+    style={
+      Object {
+        "height": 26,
+        "width": 26,
+      }
+    }
+  >
+    <picture
+      className="picture"
+    >
+      <img
+        src="/icons//angle-down.svg"
+        style={
+          Object {
+            "maxWidth": 26,
+          }
+        }
+      />
+    </picture>
+  </div>
+  <select
+    className="dropdown-select"
+    onChange={[Function]}
+    value=""
+  >
+    <option
+      value={800}
+    >
+      8:00 AM
+    </option>
+    <option
+      value={1000}
+    >
+      10:00 AM
+    </option>
+    <option
+      value={1300}
+    >
+      1:00 PM
+    </option>
+    <option
+      value={1500}
+    >
+      3:00 PM
+    </option>
+  </select>
+</div>
+`;

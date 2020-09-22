@@ -10,8 +10,8 @@ function transformTokens(parentKey, object) {
   return objectKeys.reduce((tokensTransformed, objectKey) => {
     const value = object[objectKey]
     const customProperty = parentKey
-        ? `${parentKey}-${objectKey}`
-        : `${objectKey}`
+      ? `${parentKey}-${objectKey}`
+      : `${objectKey}`
 
     if (Array.isArray(value)) {
       return `${tokensTransformed}\n\t--${toKebabCase(

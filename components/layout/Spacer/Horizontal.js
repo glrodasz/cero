@@ -18,8 +18,12 @@ const Horizontal = ({ size, isVisible }) => (
   />
 )
 
+Horizontal.defaultProps = {
+  size: 'none',
+}
+
 Horizontal.propTypes = {
-  size: PropTypes.number.isRequired,
+  size: PropTypes.string.isRequired,
   isVisible: PropTypes.bool,
 }
 

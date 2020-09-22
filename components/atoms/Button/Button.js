@@ -18,9 +18,9 @@ const Button = ({ type, children, isBlock, onClick }) => (
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  type: PropTypes.oneOf[('primary', 'secondary', 'tertiary')],
+  type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
   onClick: PropTypes.func,
-  isBlock: PropTypes.boolean,
+  isBlock: PropTypes.bool,
 }
 
 Button.defaultProps = {
