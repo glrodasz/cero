@@ -9,20 +9,15 @@ function transformTokens(parentKey, object) {
 
   return objectKeys.reduce((tokensTransformed, objectKey) => {
     const value = object[objectKey]
-
-    if (Array.isArray(value)) {
-      const customProperty = parentKey
+    const customProperty = parentKey
         ? `${parentKey}-${objectKey}`
         : `${objectKey}`
 
+    if (Array.isArray(value)) {
       return `${tokensTransformed}\n\t--${toKebabCase(
         customProperty
       )}: ${value.join(', ')};`
     } else if (typeof value === 'object') {
-      const customProperty = parentKey
-        ? `${parentKey}-${objectKey}`
-        : `${objectKey}`
-
       return `${tokensTransformed}\n\t${transformTokens(
         `${toKebabCase(customProperty)}`,
         value
@@ -46,6 +41,7 @@ function buildTokens() {
     if (error) {
       return console.error(error)
     }
+    console.log('🎨 Custom properties created!')
   })
 }
 
