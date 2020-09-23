@@ -1,38 +1,8 @@
 # Cero a producción
 This is an example project about how to create a complete web app using React with high interoperability.
 
-## Creating a Components Library
-### Storybook configuration
-- `npx sb init`
-- Choose that is a React project
-- `yarn storybook`
-- Add global styles `globals.css`
-- Add reset styles `https://jgthms.com/minireset.css`
-- Add typography from Google Fonts
-### Design Tokens
-- Create tokens/index.js file
-- Create `build-tokens` script
-- Add brand colors to tokens
-- Add the rest of the tokens based on the project*
-### Atoms & Molecules
-- Create Paragraph Atom*
-- Create Heading Atom
-- Create Button Atom
-- Create Icon Atom
-- Create Picture Atom
-- Create ButtonIcon Molecule
-- Create Spacer's Layout
-### Lint and styling
-- Add a modified version of [EditorConfig](https://github.com/airbnb/javascript/blob/master/.editorconfig)
-- Add ESLint and Prettier as dev dependencies
-1. Install ESLint and create a config file following the instructions [here](https://eslint.org/docs/user-guide/getting-started#installation-and-usage)
-2. Intall the prettier configuration along ESLint following [these](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration) instructions
-3. Finally configure the precommit hook with lint-staged [here](https://prettier.io/docs/en/precommit.html#option-1-lint-stagedhttpsgithubcomokonetlint-staged)
-### Creating tests [Components]
-### Creating the CI scripts [Components]
-### Creating a NPM package [Components]
-### Configure Semantic Release [Components]
-### Adding a good README
+## Creating a components library
+The project has been moved to https://github.com/glrodasz/cero-components
 
 ## Welcome to the Web
 ### Redux configuration [Web]
