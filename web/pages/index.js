@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Head from "next/head";
 
 import { Heading, Input, Button, Spacer } from "@glrodasz/components";
 
