@@ -38,7 +38,7 @@ The project has been moved to https://github.com/glrodasz/cero-components
 
 ## Bundling
 ### Webpack configuration [Web]
-### Frontend Optimisation [Web]
+### Frontend Optimization [Web]
 
 ## Emailing layer
 ### Email template system [Api]
