@@ -53,4 +53,4 @@ The project has been moved to https://github.com/glrodasz/cero-components
 # Notes
 ## Atomic Design
 - Atom: A atom is a component that composed by an unique Atom with/without HTML tags or just HTML tags.
-- Molecule: A molecule is a component that is composed by at least 2 diffent atoms.
+- Molecule: A molecule is a component that is composed by at least 2 different atoms.
