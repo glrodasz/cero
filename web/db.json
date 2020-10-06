@@ -1,0 +1,7 @@
+{
+  "tasks": [
+    { "id": 1, "description": "json-server", "author": "typicode" },
+    { "id": 2, "description": "json-server", "author": "typicode" }
+  ],
+  "profile": { "name": "typicode" }
+}

@@ -1,16 +1,17 @@
 # Cero a producción
-This is an example project about how to create a complete web app using React with high interoperability.
+Zero to Production is a project in which we will build a productivity management application. In this series of live broadcasts, I will be revealing all the complications that a programmer has when building a web app. This project is live streamed in https://glrz.me/glrodasz.
 
-## Creating a components library
-The project has been moved to https://github.com/glrodasz/cero-components
+## Components library
+The project is located [here](https://github.com/glrodasz/cero-components)
 
 ## Welcome to the Web
-### Redux configuration [Web]
-### Folder Structure [Web]
-### Environment variables [Web]
+### Install JSON Server
+### React Query
+### Folder Structure
+### Environment variables
 
 ## Connecting both worlds
-### Developing an Organism [Components]
+### Developing an Organism
 ### Configuring Hapi [Api]
 ### Environment variables [Api]
 ### Configuring Mongoose [Api]
@@ -48,9 +49,3 @@ The project has been moved to https://github.com/glrodasz/cero-components
 ### Docker
 ### Kubernetes
 ### Jenkins
-
-
-# Notes
-## Atomic Design
-- Atom: A atom is a component that composed by an unique Atom with/without HTML tags or just HTML tags.
-- Molecule: A molecule is a component that is composed by at least 2 different atoms.
