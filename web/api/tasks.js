@@ -8,6 +8,14 @@ class Task extends Request {
   getById({ id }) {
     return this.request(`tasks/${id}`);
   }
+
+  create({ description }) {
+   return this.request('tasks', { method: 'post', body: { description }})
+  }
+
+  delete({ id }) {
+    return this.request(`tasks/${id}`, { method: 'delete' })
+  }
 }
 
 export default Task;
