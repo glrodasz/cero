@@ -4,15 +4,21 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:api": "json-server --watch db.json --port 3001",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "@glrodasz/components": "0.1.2",
+    "@glrodasz/components": "^0.1.2",
+    "minireset.css": "0.0.6",
     "next": "9.5.3",
     "next-transpile-modules": "4.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "minireset.css": "0.0.6"
+    "react-query": "2.23.1",
+    "react-query-devtools": "2.5.1"
+  },
+  "devDependencies": {
+    "json-server": "0.16.2"
   }
 }

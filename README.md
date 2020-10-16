@@ -1,63 +1,38 @@
-# cero-a-produccion
+# Cero a producción
+Zero to Production is a project in which we will build a productivity management application. In this series of live broadcasts, I will be revealing all the complications that a programmer has when building a web app. This project is live streamed in https://glrz.me/glrodasz.
 
-# Course Outline
-## Hello world
-### Storybook configuration [Components]
-- `npx sb init`
-- Choose that is a React project
-- `yarn storybook`
-- Add font base size to `main.css` and a reset `https://jgthms.com/minireset.css`
-- Add typography*
-### Design Tokens [Components]
-- Create tokens/index.js file
-- Create `build-tokens` script
-- Add brand colors to tokens
-- Add the rest of the tokens based on the project*
-### Atoms & Molecules [Components]
-- Create Paragraph Atom*
-- Create Heading Atom
-- Create Button Atom
-- Create Icon Atom
-- Create Picture Atom
-- Create ButtonIcon Molecule
-- Create Spacer's Layout
-### Lint and styling [Components, Web]
-- Add [EditorConfig](https://github.com/airbnb/javascript/blob/master/.editorconfig)
-- Add ESLint and Prettier
-1. Install ESLint and create a config file following the instructions [here](https://eslint.org/docs/user-guide/getting-started#installation-and-usage)
-2. Intall the prettier configuration along ESLint following [these](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration) instructions
-3. Finally configure the precommit hook with lint-staged [here](https://prettier.io/docs/en/precommit.html#option-1-lint-stagedhttpsgithubcomokonetlint-staged)
-### Creating a NPM package [Components]
-### Configure Semantic Release [Components]
-### Creating snapshot tests [Components]
+## Components library
+The project is located [here](https://github.com/glrodasz/cero-components)
 
 ## Welcome to the Web
-### Redux configuration [Web]
-### Folder Structure [Web]
-### Environment variables [Web]
+### Install JSON Server
+- Install JSON server as a dev dependency `yarn add --dev json-server`
+- Create a file called `db.json`
+- Create an script `dev:api: "dev:api": "json-server --watch db.json --port 3001"`
+### React Query
+- Install React Query `yarn add react-query`
+### Folder Structure
+### Developing an Organism
+### Environment variables
+### Events in Components
+### Error handling
+### Unit testing
+### Snapshot testing
+### Visual tests
+### Integration test
+
 
 ## Connecting both worlds
-### Developing an Organism [Components]
-### Configuring Hapi [Api]
-### Environment variables [Api]
-### Configuring Mongoose [Api]
-### Folder Structure [Api]
-### Developing a Service [Api]
-
-## Logging & Events
-### Events in Components [Web]
-### Error handling [Web]
-### Logging requests [Api]
-### Error handling [Api]
-
-## Testing
-### Unit testing [Web]
-### Snapshot testing [Web]
-### Visual tests [Components, Web]
-### Integration test [Web]
-### Unit testing [Api]
-### Integration test [Api]
-### End-to-end tests [Web]
+### Configuring Hapi
+### Environment variables
+### Configuring Mongoose
+### Folder Structure
+### Developing a Service
+### Logging requests
+### Error handling
+### Unit testing
+### Integration test
+### End-to-end tests
 
 ## i18n
 ### Supporting languages [Web]
@@ -65,7 +40,7 @@
 
 ## Bundling
 ### Webpack configuration [Web]
-### Frontend Optimisation [Web]
+### Frontend Optimization [Web]
 
 ## Emailing layer
 ### Email template system [Api]
@@ -75,9 +50,3 @@
 ### Docker
 ### Kubernetes
 ### Jenkins
-
-
-# Notes
-## Atomic Design
-- Atom: A atom is a component that composed by an unique Atom with/without HTML tags or just HTML tags.
-- Molecule: A molecule is a component that is composed by at least 2 diffent atoms.
