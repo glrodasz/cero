@@ -37,8 +37,6 @@ function Planning(props) {
   if (isLoading) return "Loading...";
   if (error) return `An error has ocurred ${error.message}`;
 
-  console.log(cache);
-
   return (
     <FullHeightContent
       content={
