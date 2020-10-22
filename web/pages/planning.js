@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import { useQuery, useQueryCache, useMutation } from "react-query";
 
 import {
@@ -7,18 +6,22 @@ import {
   Avatar,
   Spacer,
   Heading,
+  Paragraph,
+  AddButton,
 } from "@glrodasz/components";
 
 import tasks from "../features/planning/api";
 
 export async function getStaticProps() {
-  const initialTasks = await tasks.getAll()
-  return { props: { initialTasks } }
+  const initialTasks = await tasks.getAll();
+  return { props: { initialTasks } };
 }
 
 function Planning(props) {
   const cache = useQueryCache();
-  const { isLoading, error, data } = useQuery("tasks", () => tasks.getAll(), { initialData: props.initialTasks });
+  const { isLoading, error, data } = useQuery("tasks", () => tasks.getAll(), {
+    initialData: props.initialTasks,
+  });
 
   const [addTask] = useMutation((params) => tasks.create(params), {
     onSuccess: () => {
@@ -58,17 +61,19 @@ function Planning(props) {
               }}
             >
               <Heading size="lg">Hola, Cristian</Heading>
-              <Heading size="md" color="primary">
-                ¿Cómo quieres empezar?
-              </Heading>
+              <Paragraph size="lg" weight="">
+                Conoce la metodologia RETO
+              </Paragraph>
             </div>
           </div>
+          <Spacer.Horizontal size="lg" />
           <Heading size="lg">
             Ahora dime, ¿cuál es la primera tarea en la que trabajarás hoy?
           </Heading>
-          <button onClick={() => addTask({ description: "New task" })}>
+          <Spacer.Horizontal size="md" />
+          {/* <AddButton onAdd={(value) => addTask({ description: value })}>
             Toca para agregar la tarea
-          </button>
+          </AddButton> */}
           {data &&
             data.map((task) => {
               return (
@@ -83,10 +88,11 @@ function Planning(props) {
       }
       footer={
         <div>
-          <p>
+          <Paragraph size="sm">
             Basados en la matriz de Eisenhower priorizamos tus tareas evitando
             listas de pendientes saturadas.
-          </p>
+          </Paragraph>
+          <Spacer.Horizontal size="sm" />
           <Button type="primary">Empieza ahora</Button>
         </div>
       }

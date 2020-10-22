@@ -38,19 +38,12 @@ export default function Home() {
         placeholder="Correo electrónico"
       />
       <Spacer.Horizontal size="lg" />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+
         <Button type="primary">Completa tu perfil</Button>
         <Spacer.Horizontal size="md" />
         <Button style={{}} type="tertiary">
           Saltar este paso por ahora
         </Button>
-      </div>
     </CenteredContent>
   );
 }
