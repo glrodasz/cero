@@ -43,13 +43,7 @@ function Planning(props) {
   return (
     <FullHeightContent
       content={
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-          }}
-        >
+        <>
           <div style={{ display: "flex" }}>
             <Avatar src="https://placeimg.com/200/200/people" />
             <Spacer.Vertical size="xs" />
@@ -61,9 +55,7 @@ function Planning(props) {
               }}
             >
               <Heading size="lg">Hola, Cristian</Heading>
-              <Paragraph size="lg" weight="">
-                Conoce la metodologia RETO
-              </Paragraph>
+              <Paragraph size="lg">Conoce la metodologia RETO</Paragraph>
             </div>
           </div>
           <Spacer.Horizontal size="lg" />
@@ -71,20 +63,31 @@ function Planning(props) {
             Ahora dime, ¿cuál es la primera tarea en la que trabajarás hoy?
           </Heading>
           <Spacer.Horizontal size="md" />
-          {/* <AddButton onAdd={(value) => addTask({ description: value })}>
-            Toca para agregar la tarea
-          </AddButton> */}
           {data &&
             data.map((task) => {
               return (
-                <div>
-                  <Heading>{task.id}</Heading>
-                  <Heading>{task.description}</Heading>
-                  <button onClick={() => deleteTask({ id: task.id })}>X</button>
+                <div
+                  style={{ display: "flex", alignItems: "center" }}
+                  key={task.id}
+                >
+                  <Heading size="sm">{task.id}</Heading>
+                  <Spacer.Vertical size="xs"/>
+                  <Paragraph>{task.description}</Paragraph>
+                  <Button
+                    type="secondary"
+                    isInline
+                    onClick={() => deleteTask({ id: task.id })}
+                  >
+                    X
+                  </Button>
                 </div>
               );
             })}
-        </div>
+          <Spacer.Horizontal size="md" />
+          <AddButton onAdd={(value) => addTask({ description: value })}>
+            Toca para agregar la tarea
+          </AddButton>
+        </>
       }
       footer={
         <div>

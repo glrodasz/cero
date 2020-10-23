@@ -1,32 +1,24 @@
 {
   "tasks": [
     {
-      "description": "New task",
-      "id": 39
+      "description": "Hacer merge del cambio de los iconos",
+      "id": 1
     },
     {
-      "description": "New task",
-      "id": 40
+      "description": "Verificar que las historias en Storybook tengan el mismo formato",
+      "id": 2
     },
     {
-      "description": "New task",
-      "id": 42
+      "description": "Cambiar el modo editable cuando se hace click por fuera del control y no hay texto",
+      "id": 3
     },
     {
-      "description": "New task",
-      "id": 61
+      "description": "Solucionar cómo se va a manejar las variables de los media queries",
+      "id": 4
     },
     {
-      "description": "New task",
-      "id": 62
-    },
-    {
-      "description": "New task",
-      "id": 63
-    },
-    {
-      "description": "New task",
-      "id": 64
+      "description": "Arreglar el pipeline",
+      "id": 5
     }
   ],
   "profile": {

@@ -1014,10 +1014,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@glrodasz/components@^0.1.2":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@glrodasz/components/-/components-0.1.3.tgz#1e10b7e2e6f65ad6b10d5b1a5ecab921670054b2"
-  integrity sha512-XjINcKjvXzXeI18Swt6rdMNZgH1TfBuN8Uyv85ircKS5V8nUeJnBRf22YeRib0HIkVmko12NHcboFudQpzC9/Q==
+"@glrodasz/components@*":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@glrodasz/components/-/components-0.2.2.tgz#7a8bd57f2cb3e51e4693620093409fda7e6f3d55"
+  integrity sha512-TPEC129vfexLZVGOPVYod6TvqCMZCBVxiMBAkddxDVWSTv3n1NeI8sM62jutz5ujbw7LmTqwNuH81U275f7MCA==
 
 "@next/react-dev-overlay@9.5.3":
   version "9.5.3"

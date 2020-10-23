@@ -37,13 +37,15 @@ export default function Home() {
         onChange={onChange("email")}
         placeholder="Correo electrónico"
       />
-      <Spacer.Horizontal size="lg" />
 
+      <div style={{ display: "flex", flexDirection: 'column', alignItems: 'center' }}>
+        <Spacer.Horizontal size="lg" />
         <Button type="primary">Completa tu perfil</Button>
         <Spacer.Horizontal size="md" />
         <Button style={{}} type="tertiary">
           Saltar este paso por ahora
         </Button>
+      </div>
     </CenteredContent>
   );
 }

@@ -2,6 +2,10 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=15.0.0",
+    "yarn": ">=1.22.10"
+  },
   "scripts": {
     "dev": "next dev",
     "dev:api": "json-server --watch db.json --port 3001",
@@ -9,7 +13,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@glrodasz/components": "^0.1.2",
+    "@glrodasz/components": "*",
     "minireset.css": "0.0.6",
     "next": "9.5.3",
     "next-transpile-modules": "4.1.0",
