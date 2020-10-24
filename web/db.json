@@ -1,14 +1,6 @@
 {
   "tasks": [
     {
-      "description": "Hacer merge del cambio de los iconos",
-      "id": 1
-    },
-    {
-      "description": "Verificar que las historias en Storybook tengan el mismo formato",
-      "id": 2
-    },
-    {
       "description": "Cambiar el modo editable cuando se hace click por fuera del control y no hay texto",
       "id": 3
     },
