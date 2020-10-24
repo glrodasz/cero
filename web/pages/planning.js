@@ -8,6 +8,8 @@ import {
   Heading,
   Paragraph,
   AddButton,
+  Card,
+  Icon,
 } from "@glrodasz/components";
 
 import tasks from "../features/planning/api";
@@ -66,21 +68,17 @@ function Planning(props) {
           {data &&
             data.map((task) => {
               return (
-                <div
-                  style={{ display: "flex", alignItems: "center" }}
-                  key={task.id}
-                >
-                  <Heading size="sm">{task.id}</Heading>
-                  <Spacer.Vertical size="xs"/>
-                  <Paragraph>{task.description}</Paragraph>
-                  <Button
-                    type="secondary"
-                    isInline
+                <Card key={task.id}>
+                  <Spacer.Vertical size="sm" />
+                  <Paragraph weight="medium">{task.description}</Paragraph>
+                  <Spacer.Vertical size="sm" />
+                  <Icon
+                    name="arrowRight"
+                    size="sm"
                     onClick={() => deleteTask({ id: task.id })}
-                  >
-                    X
-                  </Button>
-                </div>
+                    background="inverted"
+                  />
+                </Card>
               );
             })}
           <Spacer.Horizontal size="md" />

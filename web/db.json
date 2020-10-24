@@ -1,16 +1,8 @@
 {
   "tasks": [
     {
-      "description": "Cambiar el modo editable cuando se hace click por fuera del control y no hay texto",
-      "id": 3
-    },
-    {
       "description": "Solucionar cómo se va a manejar las variables de los media queries",
       "id": 4
-    },
-    {
-      "description": "Arreglar el pipeline",
-      "id": 5
     }
   ],
   "profile": {

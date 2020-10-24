@@ -33,19 +33,19 @@ export default function Home() {
           </Card>
           <Spacer.Horizontal size="lg" />
           <Card size="sm">
-            <Icon name="angleDown" hasBackground />
+            <Icon name="angleDown" background="highlight" />
             <Spacer.Vertical size="xs" />
             <span>Maria ha hecho check-in en Factoria</span>
           </Card>
           <Spacer.Horizontal size="xs" />
           <Card size="sm">
-            <Icon name="angleDown" hasBackground />
+            <Icon name="angleDown" background="highlight" />
             <Spacer.Vertical size="xs" />
             <span>Maria ha hecho check-in en Factoria</span>
           </Card>
           <Spacer.Horizontal size="xs" />
           <Card size="sm">
-            <Icon name="angleDown" hasBackground />
+            <Icon name="angleDown" background="highlight" />
             <Spacer.Vertical size="xs" />
             <span>Maria ha hecho check-in en Factoria</span>
           </Card>
