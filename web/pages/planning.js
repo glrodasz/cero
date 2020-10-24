@@ -68,17 +68,20 @@ function Planning(props) {
           {data &&
             data.map((task) => {
               return (
-                <Card key={task.id}>
-                  <Spacer.Vertical size="sm" />
-                  <Paragraph weight="medium">{task.description}</Paragraph>
-                  <Spacer.Vertical size="sm" />
-                  <Icon
-                    name="arrowRight"
-                    size="sm"
-                    onClick={() => deleteTask({ id: task.id })}
-                    background="inverted"
-                  />
-                </Card>
+                <>
+                  <Card key={task.id}>
+                    <Spacer.Vertical size="sm" />
+                    <Paragraph weight="medium">{task.description}</Paragraph>
+                    <Spacer.Vertical size="sm" />
+                    <Icon
+                      name="trash"
+                      size="sm"
+                      onClick={() => deleteTask({ id: task.id })}
+                      background="inverted"
+                    />
+                  </Card>
+                  <Spacer.Horizontal size="xs" />
+                </>
               );
             })}
           <Spacer.Horizontal size="md" />
