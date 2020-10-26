@@ -7,10 +7,10 @@
     "yarn": ">=1.22.10"
   },
   "scripts": {
-    "dev": "concurrently 'npm:dev:*'",
-    "dev:web": "next dev",
-    "dev:api": "json-server --watch db.json --port 3001",
     "build": "next build",
+    "dev:api": "json-server --watch db.json --port 3001",
+    "dev:web": "next dev",
+    "dev": "concurrently 'npm:dev:*'",
     "start": "next start"
   },
   "dependencies": {
