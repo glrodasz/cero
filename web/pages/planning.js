@@ -85,20 +85,21 @@ function Planning(props) {
               );
             })}
           <Spacer.Horizontal size="md" />
-          <AddButton onAdd={(value) => addTask({ description: value })}>
+          <AddButton onAdd={(value) => addTask({ description: value })} focusHelpText="Presiona enter" blurHelpText="Clic para continuar">
             Toca para agregar la tarea
           </AddButton>
         </>
       }
       footer={
-        <div>
+        <>
+          <Spacer.Horizontal size="lg" />
           <Paragraph size="sm">
             Basados en la matriz de Eisenhower priorizamos tus tareas evitando
             listas de pendientes saturadas.
           </Paragraph>
           <Spacer.Horizontal size="sm" />
           <Button type="primary">Empieza ahora</Button>
-        </div>
+        </>
       }
     />
   );

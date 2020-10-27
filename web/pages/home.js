@@ -6,6 +6,7 @@ import {
   Icon,
   CenteredContent,
   FullHeightContent,
+  Paragraph,
 } from "@glrodasz/components";
 
 export default function Home() {
@@ -25,29 +26,35 @@ export default function Home() {
           </div>
           <Spacer.Horizontal size="lg" />
           <Card color="secondary" size="lg">
-            Buscar un espacio para trabajar
+            <Paragraph weight="medium" color="inverted" size="lg">
+              Buscar un espacio para trabajar
+            </Paragraph>
           </Card>
           <Spacer.Horizontal size="md" />
           <Card color="primary" size="lg">
-            Iniciar una sesión de productividad
+            <Paragraph weight="medium" color="inverted" size="lg">
+              Iniciar una sesión de productividad
+            </Paragraph>
           </Card>
           <Spacer.Horizontal size="lg" />
           <Card size="sm">
-            <Icon name="angleDown" background="highlight" />
-            <Spacer.Vertical size="xs" />
-            <span>Maria ha hecho check-in en Factoria</span>
+            <Icon name="user" color="primary" background="highlight" />
+            <Spacer.Vertical size="sm" />
+            <Paragraph>Maria ha hecho check-in en Factoria</Paragraph>
           </Card>
           <Spacer.Horizontal size="xs" />
           <Card size="sm">
-            <Icon name="angleDown" background="highlight" />
-            <Spacer.Vertical size="xs" />
-            <span>Maria ha hecho check-in en Factoria</span>
+            <Icon name="user" color="primary" background="highlight" />
+            <Spacer.Vertical size="sm" />
+            <Paragraph>Frank ha iniciado una sesión de productividad</Paragraph>
           </Card>
           <Spacer.Horizontal size="xs" />
           <Card size="sm">
-            <Icon name="angleDown" background="highlight" />
-            <Spacer.Vertical size="xs" />
-            <span>Maria ha hecho check-in en Factoria</span>
+            <Icon name="arrowUp" color="primary" background="spotlight" />
+            <Spacer.Vertical size="sm" />
+            <Paragraph>
+              Tu productividad ha incrementado un 30% durante la última semana
+            </Paragraph>
           </Card>
         </>
       }
