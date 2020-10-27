@@ -16,7 +16,7 @@
   "dependencies": {
     "@glrodasz/components": "*",
     "minireset.css": "0.0.6",
-    "next": "9.5.3",
+    "next": "10.0.0",
     "next-transpile-modules": "4.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
