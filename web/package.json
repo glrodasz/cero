@@ -12,6 +12,7 @@
     "dev:web": "next dev",
     "dev": "concurrently 'npm:dev:*'",
     "start": "next start",
+    "commit": "cz",
     "lint:css:fix": "yarn lint:css:prettier:fix && yarn lint:css:stylelint:fix",
     "lint:css:prettier:fix": "yarn lint:css:prettier --write",
     "lint:css:prettier": "prettier '**/*.css' --list-different --ignore-path .gitignore",
