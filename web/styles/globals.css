@@ -1,0 +1,36 @@
+:root {
+  --color-primary: #FB8B24;
+  --color-primary-muted: #854D27;
+  --color-primary-highlight: #DD7230;
+  --color-primary-inverted: #172A3A;
+
+  --color-secondary: #eb2d52;
+  --color-secondary-muted: #eb4e58;
+  --color-secondary-inverted: #3C0919;
+
+  --color-font-base: #fff;
+  --color-font-muted: #7e858c;
+  --color-font-highlight: #b7b7b7;
+  --color-font-inverted: #000;
+
+  --background-color-primary: #032B43;
+  --background-color-primary-highlight: #172A3A;
+
+  --input-background: #172A3A;
+
+  --picture-border: 1px solid #cbd5e0;
+}
+
+body {
+  background: var(--background-color-primary);
+}
+
+#__next {
+  height: 100%;
+}
+
+.random {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}

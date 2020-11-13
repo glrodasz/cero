@@ -7,6 +7,7 @@ import Link from "next/link";
 import "minireset.css";
 import "@glrodasz/components/styles/globals.css";
 import "@glrodasz/components/styles/tokens.css";
+import "../styles/globals.css"
 
 const queryCache = new QueryCache();
 
