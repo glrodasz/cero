@@ -11,6 +11,21 @@ The project is located [here](https://github.com/glrodasz/cero-components)
 - Create an script `dev:api: "dev:api": "json-server --watch db.json --port 3001"`
 ### React Query
 - Install React Query `yarn add react-query`
+
+### Linting, Scritps
+Copy config files:
+* .commitlintrc.json
+* .eslintrc.json
+* .huskyrc.json
+* .lintstagedrc.json
+* .prettierrc.json
+* .stylelintrc.json
+* .jest.config.js (modified)
+* .jest.setup.js
+Add dependencies
+```
+yarn add --dev npm-run-all @commitlint/cli @commitlint/config-conventional commitizen eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-react husky jest lint-staged prettier stylelint stylelint-config-idiomatic-order stylelint-config-recommended @mapbox/stylelint-processor-arbitrary-tags
+```
 ### Folder Structure
 ### Developing an Organism
 ### Environment variables

@@ -11,7 +11,21 @@
     "dev:api": "json-server --watch db.json --port 3001",
     "dev:web": "next dev",
     "dev": "concurrently 'npm:dev:*'",
-    "start": "next start"
+    "start": "next start",
+    "lint:css:fix": "yarn lint:css:prettier:fix && yarn lint:css:stylelint:fix",
+    "lint:css:prettier:fix": "yarn lint:css:prettier --write",
+    "lint:css:prettier": "prettier '**/*.css' --list-different --ignore-path .gitignore",
+    "lint:css:stylelint:fix": "yarn lint:css:stylelint --fix",
+    "lint:css:stylelint": "stylelint '**/*.css' --ignore-path .gitignore",
+    "lint:css": "run-s lint:css:stylelint lint:css:prettier",
+    "lint:fix": "run-p lint:js:fix lint:json:fix lint:css:fix ",
+    "lint:js:fix": "yarn lint:js --fix",
+    "lint:js": "eslint --cache --ignore-path .gitignore '**/*.js'",
+    "lint:json:fix": "yarn lint:json --write",
+    "lint:json": "prettier '**/*.json' --list-different --ignore-path .gitignore",
+    "lint": "run-p lint:js lint:json lint:css",
+    "test:watch": "CONSOLE_LEVEL=debug yarn test --watch",
+    "test": "jest"
   },
   "dependencies": {
     "@glrodasz/components": "*",
@@ -24,7 +38,23 @@
     "react-query-devtools": "2.5.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@mapbox/stylelint-processor-arbitrary-tags": "0.3.0",
+    "commitizen": "4.2.2",
     "concurrently": "5.3.0",
-    "json-server": "0.16.2"
+    "eslint": "7.13.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.5",
+    "husky": "4.3.0",
+    "jest": "26.6.3",
+    "json-server": "0.16.2",
+    "lint-staged": "10.5.1",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.1.2",
+    "stylelint": "13.7.2",
+    "stylelint-config-idiomatic-order": "8.1.0",
+    "stylelint-config-recommended": "3.0.0"
   }
 }
