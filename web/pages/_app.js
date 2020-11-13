@@ -1,15 +1,16 @@
-import { ReactQueryCacheProvider, QueryCache } from "react-query";
-import { ReactQueryDevtools } from "react-query-devtools";
-import { Button, Container } from "@glrodasz/components";
-import Head from "next/head";
-import Link from "next/link";
+import { ReactQueryCacheProvider, QueryCache } from 'react-query'
+import { ReactQueryDevtools } from 'react-query-devtools'
+import PropTypes from 'prop-types'
+import { Button, Container } from '@glrodasz/components'
+import Head from 'next/head'
+import Link from 'next/link'
 
-import "minireset.css";
-import "@glrodasz/components/styles/globals.css";
-import "@glrodasz/components/styles/tokens.css";
-import "../styles/globals.css"
+import 'minireset.css'
+import '@glrodasz/components/styles/globals.css'
+import '@glrodasz/components/styles/tokens.css'
+import '../styles/globals.css'
 
-const queryCache = new QueryCache();
+const queryCache = new QueryCache()
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -20,8 +21,8 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      {["/", "/home", "/planning"].map((link) => (
-        <span style={{ marginRight: 10 }}>
+      {['/', '/home', '/planning'].map((link) => (
+        <span key={link} style={{ marginRight: 10 }}>
           <Link href={link}>
             <Button type="tertiary">{link.replace('/', '') || '/index'}</Button>
           </Link>
@@ -32,7 +33,12 @@ function MyApp({ Component, pageProps }) {
       </Container>
       <ReactQueryDevtools initialIsOpen />
     </ReactQueryCacheProvider>
-  );
+  )
 }
 
-export default MyApp;
+MyApp.propTypes = {
+  Component: PropTypes.node.isRequired,
+  pageProps: PropTypes.object,
+}
+
+export default MyApp

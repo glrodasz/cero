@@ -1,16 +1,16 @@
-import Request from "./request";
+import Request from './request'
 
 class Task extends Request {
   getAll() {
-    return this.request();
+    return this.request()
   }
 
   getById({ id }) {
-    return this.request(`tasks/${id}`);
+    return this.request(`tasks/${id}`)
   }
 
   create({ description }) {
-   return this.request('tasks', { method: 'post', body: { description }})
+    return this.request('tasks', { method: 'post', body: { description } })
   }
 
   delete({ id }) {
@@ -18,4 +18,4 @@ class Task extends Request {
   }
 }
 
-export default Task;
+export default Task

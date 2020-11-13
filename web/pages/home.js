@@ -4,20 +4,19 @@ import {
   Spacer,
   Card,
   Icon,
-  CenteredContent,
   FullHeightContent,
   Paragraph,
-} from "@glrodasz/components";
+} from '@glrodasz/components'
 
 export default function Home() {
   return (
     <FullHeightContent
       content={
         <>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: 'flex' }}>
             <Avatar src="https://placeimg.com/200/200/people" />
             <Spacer.Vertical size="xs" />
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
               <Heading size="lg">Buenos días, Cristian</Heading>
               <Heading size="md" color="primary">
                 ¿Cómo quieres empezar?
@@ -59,5 +58,5 @@ export default function Home() {
         </>
       }
     ></FullHeightContent>
-  );
+  )
 }

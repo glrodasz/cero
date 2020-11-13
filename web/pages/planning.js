@@ -1,4 +1,5 @@
-import { useQuery, useQueryCache, useMutation } from "react-query";
+import PropTypes from 'prop-types'
+import { useQuery, useQueryCache, useMutation } from 'react-query'
 
 import {
   FullHeightContent,
@@ -8,40 +9,38 @@ import {
   Heading,
   Paragraph,
   AddButton,
-  Card,
-  Icon,
   Task,
-} from "@glrodasz/components";
+} from '@glrodasz/components'
 
-import tasks from "../features/planning/api";
+import tasks from '../features/planning/api'
 
 export async function getStaticProps() {
-  const initialTasks = await tasks.getAll();
-  return { props: { initialTasks } };
+  const initialTasks = await tasks.getAll()
+  return { props: { initialTasks } }
 }
 
 function Planning(props) {
-  const cache = useQueryCache();
-  const { isLoading, error, data } = useQuery("tasks", () => tasks.getAll(), {
+  const cache = useQueryCache()
+  const { isLoading, error, data } = useQuery('tasks', () => tasks.getAll(), {
     initialData: props.initialTasks,
-  });
+  })
 
   const [addTask] = useMutation((params) => tasks.create(params), {
     onSuccess: () => {
       // Query Invalidations
-      cache.invalidateQueries("tasks");
+      cache.invalidateQueries('tasks')
     },
-  });
+  })
 
   const [deleteTask] = useMutation((params) => tasks.delete(params), {
     onSuccess: () => {
       // Query Invalidations
-      cache.invalidateQueries("tasks");
+      cache.invalidateQueries('tasks')
     },
-  });
+  })
 
-  if (isLoading) return "Loading...";
-  if (error) return `An error has ocurred ${error.message}`;
+  if (isLoading) return 'Loading...'
+  if (error) return `An error has ocurred ${error.message}`
 
   return (
     <>
@@ -73,7 +72,7 @@ function Planning(props) {
                     </Task>
                     <Spacer.Horizontal size="xs" />
                   </>
-                );
+                )
               })}
             <Spacer.Horizontal size="md" />
             <AddButton
@@ -109,7 +108,11 @@ function Planning(props) {
         }
       `}</style>
     </>
-  );
+  )
 }
 
-export default Planning;
+Planning.propTypes = {
+  initialTasks: PropTypes.array,
+}
+
+export default Planning
