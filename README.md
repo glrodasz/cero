@@ -26,6 +26,23 @@ Add dependencies
 ```
 yarn add --dev npm-run-all @commitlint/cli @commitlint/config-conventional commitizen eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-react husky jest lint-staged prettier stylelint stylelint-config-idiomatic-order stylelint-config-recommended @mapbox/stylelint-processor-arbitrary-tags
 ```
+Copy scripts:
+```
+    "lint:css:fix": "yarn lint:css:prettier:fix && yarn lint:css:stylelint:fix",
+    "lint:css:prettier:fix": "yarn lint:css:prettier --write",
+    "lint:css:prettier": "prettier '**/*.css' --list-different --ignore-path .gitignore",
+    "lint:css:stylelint:fix": "yarn lint:css:stylelint --fix",
+    "lint:css:stylelint": "stylelint '**/*.css' --ignore-path .gitignore",
+    "lint:css": "run-s lint:css:stylelint lint:css:prettier",
+    "lint:fix": "run-p lint:js:fix lint:json:fix lint:css:fix ",
+    "lint:js:fix": "yarn lint:js --fix",
+    "lint:js": "eslint --cache --ignore-path .gitignore '**/*.js'",
+    "lint:json:fix": "yarn lint:json --write",
+    "lint:json": "prettier '**/*.json' --list-different --ignore-path .gitignore",
+    "lint": "run-p lint:js lint:json lint:css",
+    "test:watch": "CONSOLE_LEVEL=debug yarn test --watch",
+    "test": "jest"
+```
 ### Folder Structure
 ### Developing an Organism
 ### Environment variables
