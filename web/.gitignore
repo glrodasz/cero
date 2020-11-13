@@ -32,3 +32,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# npm
+package-lock.json
+
+# storybook
+storybook-static

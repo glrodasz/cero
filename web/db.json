@@ -1,5 +1,26 @@
 {
-  "tasks": [],
+  "tasks": [
+    {
+      "description": "Esta es una nueva tarea",
+      "id": 1
+    },
+    {
+      "description": "This is a new task",
+      "id": 2
+    },
+    {
+      "description": "Ok, this is interesting",
+      "id": 3
+    },
+    {
+      "description": "I know it!",
+      "id": 4
+    },
+    {
+      "description": "Esto es una prueba",
+      "id": 5
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
