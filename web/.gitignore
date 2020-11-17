@@ -33,6 +33,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Optional eslint cache
+.eslintcache
+
 # npm
 package-lock.json
 
