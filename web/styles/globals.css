@@ -16,15 +16,19 @@
   --background-color-primary: #032b43;
   --background-color-primary-highlight: #172a3a;
 
-  --button-border-radius-base: 0;
   --button-border-radius-sm: 0;
   --button-border-radius-md: 0;
+  --button-border-radius-lg: 0;
 
-  --input-height: 40px;
+  --input-height: 55px;
   --input-background: #172a3a;
   --input-border-radius: 0;
 
   --picture-border: 1px solid #cbd5e0;
+
+  --card-border-radius: 0;
+
+  --task-border-radius: 0;
 }
 
 body {
