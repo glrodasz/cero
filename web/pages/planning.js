@@ -61,7 +61,7 @@ function Planning(props) {
   if (error) return `An error has ocurred ${error.message}`
 
   const [firstTask, secondTask, thirdTask, ...backlogTasks] = data
-  const priotityTasks = [firstTask, secondTask, thirdTask]
+  const priorityTasks = [firstTask, secondTask, thirdTask]
 
   return (
     <>
@@ -81,7 +81,7 @@ function Planning(props) {
               Ahora dime, ¿cuál es la primera tarea en la que trabajarás hoy?
             </Heading>
             <Spacer.Horizontal size="md" />
-            {priotityTasks?.map((task, index) => {
+            {priorityTasks?.map((task, index) => {
               return (
                 <>
                   <Task
