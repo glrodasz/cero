@@ -34,6 +34,7 @@
     "next": "10.0.0",
     "next-transpile-modules": "4.1.0",
     "react": "16.13.1",
+    "react-beautiful-dnd": "13.0.0",
     "react-dom": "16.13.1",
     "react-query": "2.23.1",
     "react-query-devtools": "2.5.1"

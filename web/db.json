@@ -1,32 +1,34 @@
 {
   "tasks": [
     {
-      "description": "Task",
+      "description": "Hola",
+      "priority": 0,
       "id": 1
     },
     {
-      "description": "Another Task",
+      "description": "SEgunda tarea",
+      "priority": 5,
       "id": 2
     },
     {
-      "description": "Hola",
+      "description": "tercera tarea",
+      "priority": 4,
       "id": 3
     },
     {
-      "description": "Una tarea muy importante",
+      "description": "asdfasdf",
+      "priority": 3,
       "id": 4
     },
     {
-      "description": "Otra tarea",
+      "description": "El resto de tareas",
+      "priority": 1,
       "id": 5
     },
     {
-      "description": "ehhh",
+      "description": "Otra tarea",
+      "priority": 2,
       "id": 6
-    },
-    {
-      "description": "funciona",
-      "id": 7
     }
   ],
   "profile": {
