@@ -1,34 +1,19 @@
 {
   "tasks": [
     {
-      "description": "Hola",
-      "priority": 0,
-      "id": 1
-    },
-    {
-      "description": "SEgunda tarea",
-      "priority": 5,
-      "id": 2
-    },
-    {
-      "description": "tercera tarea",
-      "priority": 4,
+      "description": "Limpiar el código del feature planning",
+      "priority": 1,
       "id": 3
     },
     {
-      "description": "asdfasdf",
+      "description": "Arreglar el bug del flash en el ordenamiento (react-beautiful-dnd)",
       "priority": 3,
       "id": 4
     },
     {
-      "description": "El resto de tareas",
-      "priority": 1,
-      "id": 5
-    },
-    {
-      "description": "Otra tarea",
+      "description": "Implementar el feature de crear una nueva sesión",
       "priority": 2,
-      "id": 6
+      "id": 5
     }
   ],
   "profile": {

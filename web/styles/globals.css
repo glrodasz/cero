@@ -1,4 +1,39 @@
-:root {
+@media (prefers-color-scheme: dark) {
+  :root body:not([data-color-scheme='light']) {
+    --color-primary: #fb8b24;
+    --color-primary-muted: #854d27;
+    --color-primary-highlight: #dd7230;
+    --color-primary-inverted: #172a3a;
+
+    --color-secondary: #eb2d52;
+    --color-secondary-muted: #eb4e58;
+    --color-secondary-inverted: #3c0919;
+
+    --color-font-base: #fff;
+    --color-font-muted: #7e858c;
+    --color-font-highlight: #b7b7b7;
+    --color-font-inverted: #000;
+
+    --background-color-primary: #032b43;
+    --background-color-primary-highlight: #172a3a;
+
+    --button-border-radius-sm: 0;
+    --button-border-radius-md: 0;
+    --button-border-radius-lg: 0;
+
+    --input-height: 55px;
+    --input-background: #172a3a;
+    --input-border-radius: 0;
+
+    --picture-border: 1px solid #cbd5e0;
+
+    --card-border-radius: 0;
+
+    --task-border-radius: 0;
+  }
+}
+
+:root body[data-color-scheme='dark'] {
   --color-primary: #fb8b24;
   --color-primary-muted: #854d27;
   --color-primary-highlight: #dd7230;

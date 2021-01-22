@@ -9,6 +9,7 @@ import 'minireset.css'
 import '@glrodasz/components/styles/globals.css'
 import '@glrodasz/components/styles/tokens.css'
 import '../styles/globals.css'
+import ToggleColorScheme from '../features/common/components/ToggleColorScheme'
 
 const queryCache = new QueryCache()
 
@@ -21,13 +22,26 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      {['/', '/home', '/planning'].map((link) => (
-        <span key={link} style={{ marginRight: 10 }}>
-          <Link href={link}>
-            <Button type="tertiary">{link.replace('/', '') || '/index'}</Button>
-          </Link>
-        </span>
-      ))}
+      <div
+        style={{
+          paddingTop: 30,
+          display: 'flex',
+          justifyContent: 'space-between',
+        }}
+      >
+        <div>
+          {['/', '/home', '/planning'].map((link) => (
+            <span key={link} style={{ marginRight: 10 }}>
+              <Link href={link}>
+                <Button type="tertiary">
+                  {link.replace('/', '') || '/index'}
+                </Button>
+              </Link>
+            </span>
+          ))}
+        </div>
+        <ToggleColorScheme />
+      </div>
       <Container>
         <Component {...pageProps} />
       </Container>
