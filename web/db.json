@@ -1,13 +1,8 @@
 {
   "tasks": [
     {
-      "description": "Limpiar el código del feature planning",
-      "priority": 1,
-      "id": 3
-    },
-    {
       "description": "Arreglar el bug del flash en el ordenamiento (react-beautiful-dnd)",
-      "priority": 3,
+      "priority": 1,
       "id": 4
     },
     {
