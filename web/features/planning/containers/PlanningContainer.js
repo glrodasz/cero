@@ -14,17 +14,23 @@ import {
 
 import TaskList from '../components/TaskList'
 
-import tasks from '../api'
+import { MAXIMUM_BACKLOG_QUANTITY } from '../constants'
+import tasksApi from '../api'
 import { reorderTasks } from '../helpers'
 
 const PlanningContainer = ({ initialData }) => {
   const [shouldStart, setShouldStart] = useState(false)
   const cache = useQueryCache()
-  const { isLoading, error, data } = useQuery('tasks', () => tasks.getAll(), {
-    initialData,
-  })
+  const { isLoading, error, data } = useQuery(
+    'tasks',
+    () => tasksApi.getAll(),
+    {
+      initialData,
+    }
+  )
+  const [tasks, setTasks] = useState(data)
 
-  const [addTask] = useMutation((params) => tasks.create(params), {
+  const [addTask] = useMutation((params) => tasksApi.create(params), {
     onSuccess: () => {
       // Query Invalidations
       cache.invalidateQueries('tasks')
@@ -32,7 +38,7 @@ const PlanningContainer = ({ initialData }) => {
   })
 
   const [updatePriorities] = useMutation(
-    (params) => tasks.updatePriorities(params),
+    (params) => tasksApi.updatePriorities(params),
     {
       onSuccess: () => {
         // Query Invalidations
@@ -41,7 +47,7 @@ const PlanningContainer = ({ initialData }) => {
     }
   )
 
-  const [deleteTask] = useMutation((params) => tasks.delete(params), {
+  const [deleteTask] = useMutation((params) => tasksApi.delete(params), {
     onSuccess: () => {
       // Query Invalidations
       cache.invalidateQueries('tasks')
@@ -49,6 +55,8 @@ const PlanningContainer = ({ initialData }) => {
   })
 
   useEffect(() => {
+    setTasks(data)
+
     if (data?.length >= 1) {
       setShouldStart(true)
     } else {
@@ -65,7 +73,8 @@ const PlanningContainer = ({ initialData }) => {
     const sourceIndex = result.source.index
     const destinationIndex = result.destination.index
 
-    const orderedTasks = reorderTasks(data, sourceIndex, destinationIndex)
+    const orderedTasks = reorderTasks(tasks, sourceIndex, destinationIndex)
+    setTasks(orderedTasks)
 
     updatePriorities({ tasks: orderedTasks })
   }
@@ -92,20 +101,24 @@ const PlanningContainer = ({ initialData }) => {
             </Heading>
             <Spacer.Horizontal size="md" />
             <TaskList
-              tasks={data}
+              tasks={tasks}
               onDragEnd={onDragEnd}
               onDeleteTask={deleteTask}
             />
-            <Spacer.Horizontal size="md" />
-            <AddButton
-              onAdd={(value) =>
-                addTask({ description: value, priority: data.length })
-              }
-              focusHelpText="Presiona enter"
-              blurHelpText="Clic para continuar"
-            >
-              Toca para agregar la tarea
-            </AddButton>
+            {tasks?.length < MAXIMUM_BACKLOG_QUANTITY && (
+              <>
+                <Spacer.Horizontal size="md" />
+                <AddButton
+                  onAdd={(value) =>
+                    addTask({ description: value, priority: tasks.length })
+                  }
+                  focusHelpText="Presiona enter"
+                  blurHelpText="Clic para continuar"
+                >
+                  Toca para agregar la tarea
+                </AddButton>
+              </>
+            )}
           </>
         }
         footer={
