@@ -15,12 +15,24 @@ import {
 import TaskList from '../components/TaskList'
 
 import { MAXIMUM_BACKLOG_QUANTITY } from '../constants'
-import tasksApi from '../api'
+import { tasksApi, focusSessionsApi } from '../api'
 import { reorderTasks } from '../helpers'
 
 const PlanningContainer = ({ initialData }) => {
-  const [shouldStart, setShouldStart] = useState(false)
   const cache = useQueryCache()
+
+  // Focus Sessions
+  const [createFocusSession] = useMutation(
+    (params) => focusSessionsApi.create(params),
+    {
+      onSuccess: () => {
+        // Query Invalidations
+        cache.invalidateQueries('focusSessions')
+      },
+    }
+  )
+
+  // Tasks
   const { isLoading, error, data } = useQuery(
     'tasks',
     () => tasksApi.getAll(),
@@ -30,7 +42,7 @@ const PlanningContainer = ({ initialData }) => {
   )
   const [tasks, setTasks] = useState(data)
 
-  const [addTask] = useMutation((params) => tasksApi.create(params), {
+  const [createTask] = useMutation((params) => tasksApi.create(params), {
     onSuccess: () => {
       // Query Invalidations
       cache.invalidateQueries('tasks')
@@ -56,12 +68,6 @@ const PlanningContainer = ({ initialData }) => {
 
   useEffect(() => {
     setTasks(data)
-
-    if (data?.length >= 1) {
-      setShouldStart(true)
-    } else {
-      setShouldStart(false)
-    }
   }, [data])
 
   const onDragEnd = (result) => {
@@ -79,6 +85,7 @@ const PlanningContainer = ({ initialData }) => {
     updatePriorities({ tasks: orderedTasks })
   }
 
+  // TODO: Create LoadingError Component (Loading, Error)
   if (isLoading) return 'Loading...'
   if (error) return `An error has ocurred ${error.message}`
 
@@ -95,22 +102,34 @@ const PlanningContainer = ({ initialData }) => {
                 <Paragraph size="lg">Conoce la metodologia RETO</Paragraph>
               </div>
             </div>
-            <Spacer.Horizontal size="lg" />
-            <Heading size="lg">
-              Ahora dime, ¿cuál es la primera tarea en la que trabajarás hoy?
-            </Heading>
-            <Spacer.Horizontal size="md" />
+            {tasks?.length == 0 && (
+              <>
+                <Spacer.Horizontal size="lg" />
+                <Heading size="lg">
+                  Ahora dime, ¿cuál es la primera tarea en la que trabajarás
+                  hoy?
+                </Heading>
+              </>
+            )}
             <TaskList
               tasks={tasks}
               onDragEnd={onDragEnd}
               onDeleteTask={deleteTask}
             />
+            {tasks?.length === 1 && (
+              <>
+                <Spacer.Horizontal size="md" />
+                <Heading size="lg">
+                  Continúa listando las demás tareas de tu día...
+                </Heading>
+              </>
+            )}
             {tasks?.length < MAXIMUM_BACKLOG_QUANTITY && (
               <>
                 <Spacer.Horizontal size="md" />
                 <AddButton
                   onAdd={(value) =>
-                    addTask({ description: value, priority: tasks.length })
+                    createTask({ description: value, priority: tasks.length })
                   }
                   focusHelpText="Presiona enter"
                   blurHelpText="Clic para continuar"
@@ -122,7 +141,7 @@ const PlanningContainer = ({ initialData }) => {
           </>
         }
         footer={
-          shouldStart ? (
+          !!tasks?.length >= 1 && (
             <>
               <Spacer.Horizontal size="lg" />
               <Paragraph size="sm">
@@ -130,11 +149,15 @@ const PlanningContainer = ({ initialData }) => {
                 evitando listas de pendientes saturadas.
               </Paragraph>
               <Spacer.Horizontal size="sm" />
-              <Button isDisabled type="primary">
+              <Button
+                onClick={() => createFocusSession()}
+                isDisabled
+                type="primary"
+              >
                 Empieza ahora
               </Button>
             </>
-          ) : null
+          )
         }
       />
       <style jsx>{`

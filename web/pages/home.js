@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {
   Avatar,
   Heading,
@@ -7,6 +8,7 @@ import {
   FullHeightContent,
   Paragraph,
 } from '@glrodasz/components'
+import { Picture } from '@glrodasz/components/atoms/Picture'
 
 export default function Home() {
   return (
@@ -24,17 +26,23 @@ export default function Home() {
             </div>
           </div>
           <Spacer.Horizontal size="lg" />
-          <Card color="secondary" size="lg">
+          <Card color="secondary" size="lg" isClickable>
+            <Picture src="/images/search-coworking.svg" width={120}></Picture>
+            <Spacer.Vertical size="lg" />
             <Paragraph weight="medium" color="inverted" size="lg">
               Buscar un espacio para trabajar
             </Paragraph>
           </Card>
           <Spacer.Horizontal size="md" />
-          <Card color="primary" size="lg">
-            <Paragraph weight="medium" color="inverted" size="lg">
-              Iniciar una sesión de productividad
-            </Paragraph>
-          </Card>
+          <Link href="/planning">
+            <Card color="primary" size="lg" isClickable>
+              <Picture src="/images/start-planning.svg" width={120}></Picture>
+              <Spacer.Vertical size="lg" />
+              <Paragraph weight="medium" color="inverted" size="lg">
+                Iniciar una sesión de productividad
+              </Paragraph>
+            </Card>
+          </Link>
           <Spacer.Horizontal size="lg" />
           <Card size="sm">
             <Icon name="user" color="primary" background="highlight" />

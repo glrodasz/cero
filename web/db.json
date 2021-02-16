@@ -1,34 +1,40 @@
 {
   "tasks": [
     {
-      "description": "Implementar el feature de crear una nueva sesión",
-      "priority": 2,
+      "description": "Implement the start productivity session ",
+      "priority": 0,
+      "id": 1
+    },
+    {
+      "description": "Create the rest of the task that are pending like check visual bugs",
+      "priority": 1,
+      "id": 2
+    }
+  ],
+  "focus-sessions": [
+    {
+      "text": "yay",
+      "id": 1
+    },
+    {
+      "text": "yay",
+      "id": 2
+    },
+    {
+      "text": "yay",
+      "id": 3
+    },
+    {
+      "text": "yay",
+      "id": 4
+    },
+    {
+      "text": "yay",
       "id": 5
     },
     {
-      "description": "Mirar si podemos crear la utilidad de API sin usar clases",
-      "priority": 1,
-      "id": 8
-    },
-    {
-      "description": "Check if we can improve the divider behaviour when with drag and drop the tasks",
-      "priority": 4,
-      "id": 11
-    },
-    {
-      "description": "Add the assistant text explaining that you can continue adding more tasks",
-      "priority": 5,
-      "id": 12
-    },
-    {
-      "description": "Allow only a maximum of X number of tasks",
-      "priority": 0,
-      "id": 13
-    },
-    {
-      "description": "This is the six",
-      "priority": 3,
-      "id": 14
+      "text": "yay",
+      "id": 6
     }
   ],
   "profile": {

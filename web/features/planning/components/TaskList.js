@@ -9,12 +9,15 @@ import { getTaskType } from '../helpers'
 const TaskList = ({ tasks, onDragEnd, onDeleteTask }) => {
   return (
     <>
-      {tasks?.length && (
-        <TaskCounter current={tasks.length} total={MAXIMUM_BACKLOG_QUANTITY}>
-          Tareas pendientes
-        </TaskCounter>
+      {!!tasks?.length && (
+        <>
+          <Spacer.Horizontal size="md" />
+          <TaskCounter current={tasks.length} total={MAXIMUM_BACKLOG_QUANTITY}>
+            Tareas pendientes
+          </TaskCounter>
+          <Spacer.Horizontal size="md" />
+        </>
       )}
-      <Spacer.Horizontal size="md" />
       <DragDropContext onDragEnd={onDragEnd}>
         <Droppable droppableId="planning">
           {(provided) => (
