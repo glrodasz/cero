@@ -1,8 +1,8 @@
 # Cero a producción
-Zero to Production is a project in which we will build a productivity management application. In this series of live broadcasts, I will be revealing all the complications that a programmer has when building a web app. This project is live streamed in https://glrz.me/glrodasz.
+Zero to Production is a project in which we will build a productivity management application. In this series of live broadcasts, I will be revealing all the complications that a programmer has when building a web app. This project is live streaming in [Twitch](https://glrz.me/stream)
 
 ## Components library
-The project is located [here](https://github.com/glrodasz/cero-components)
+The `@glrodasz/components` library is our UI kit developed for this project. You can check its Storybook [here](https://cero-components.vercel.app) or check its repository [here](https://github.com/glrodasz/cero-components)
 
 ## Welcome to the Web
 ### Install JSON Server
