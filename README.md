@@ -1,5 +1,7 @@
 # Cero a producción
-Zero to Production is a project in which we will build a productivity management application. In this series of live broadcasts, I will be revealing all the complications that a programmer has when building a web app. This project is live streaming in [Twitch](https://glrz.me/stream)
+Cero to Production is a project where we are building a productivity management application called "RETO" in this series of live coding sessions. The idea behindd this sessions is to show all the complications and real thinking and decision making that common programmer do in daily basis with JavaScript.
+
+The project is live streaming in [Twitch](https://glrz.me/stream) in Spanish, every Tuesdays and Thursdays.
 
 ## 1. Components library
 The `@glrodasz/components` library is our UI kit developed for this project. You can check its Storybook [here](https://cero-components.vercel.app) or check its repository [here](https://github.com/glrodasz/cero-components)
