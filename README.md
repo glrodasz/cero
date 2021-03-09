@@ -9,7 +9,7 @@ You can check the past live streamings in [YouTube](https://glrz.me/youtube-cero
 The `@glrodasz/components` library is our UI kit developed for this project.
 * [Storybook docs](https://cero-components.vercel.app)
 * [NPM package](https://www.npmjs.com/package/@glrodasz/components)
-* [GitHuyb repository](https://github.com/glrodasz/cero-components)
+* [GitHub repository](https://github.com/glrodasz/cero-components)
 
 ## 2. Web Project
 The web project is the frontend part of our application. It uses the `@glrodasz/components` library as a depency using React through Next.js.
