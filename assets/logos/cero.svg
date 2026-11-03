@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Cero logo: a zero shaped as a rocket taking off</title><rect width="512" height="512" rx="112" fill="#9879e9"/>
+<path d="M222 352 Q256 380 290 352 L256 448 Z" fill="#00e5a8"/>
+<path d="M188 250 L120 340 L120 386 L196 340 Z M324 250 L392 340 L392 386 L316 340 Z" fill="#fff" fill-opacity=".6"/>
+<ellipse cx="256" cy="226" rx="78" ry="128" fill="none" stroke="#fff" stroke-width="52"/>
+</svg>
