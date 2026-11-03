@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img">
+  <title>Cero API logo</title>
+  <rect x="2" y="2" width="252" height="252" rx="56" fill="#16151F" stroke="#3A3850" stroke-width="4"/>
+  <rect x="52" y="58" width="152" height="34" rx="10" fill="#8B7CF6"/>
+  <rect x="52" y="111" width="152" height="34" rx="10" fill="#F4F1EA"/>
+  <rect x="52" y="164" width="152" height="34" rx="10" fill="#2CB5A0"/>
+  <g fill="#16151F">
+    <circle cx="72" cy="75" r="6"/><circle cx="92" cy="75" r="6"/><circle cx="112" cy="75" r="6"/>
+    <circle cx="72" cy="181" r="6"/><circle cx="92" cy="181" r="6"/>
+  </g>
+  <text x="128" y="136" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-weight="700" font-size="26" fill="#16151F">{ 0 }</text>
+</svg>

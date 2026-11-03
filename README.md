@@ -33,7 +33,7 @@ naming things.
 
 ## The repositories
 
-### 1. Components library — [`cero-components`](https://github.com/glrodasz/cero-components)
+### <img src="assets/logos/cero-components.svg" width="40" alt="Cero Components logo" align="center"> 1. Components library — [`cero-components`](https://github.com/glrodasz/cero-components)
 
 The `@glrodasz/components` UI kit built for this project, following Atomic
 Design. Published to npm and documented in Storybook.
@@ -41,13 +41,13 @@ Design. Published to npm and documented in Storybook.
 [npm](https://www.npmjs.com/package/@glrodasz/components) ·
 [Storybook](https://cero-components.vercel.app)
 
-### 2. Web app — [`cero-web`](https://github.com/glrodasz/cero-web)
+### <img src="assets/logos/cero-web.svg" width="40" alt="RETO logo" align="center"> 2. Web app — [`cero-web`](https://github.com/glrodasz/cero-web)
 
 The frontend of RETO: Next.js + React, consuming `@glrodasz/components`.
 Persists through `json-server` locally, and in the browser's `localStorage` in
 the [public demo](https://reto.guillermorodas.com/).
 
-### 3. API — [`cero-api`](https://github.com/glrodasz/cero-api)
+### <img src="assets/logos/cero-api.svg" width="40" alt="Cero API logo" align="center"> 3. API — [`cero-api`](https://github.com/glrodasz/cero-api)
 
 The backend, implemented across several stacks as an exercise in comparing them
 (TypeScript, Rust, Go, Python, Elixir, PHP). Work in progress — the web app does
