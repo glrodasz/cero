@@ -1,4 +1,4 @@
-<img src="assets/logos/cero.svg" width="164" align="left" alt="Cero logo: 0 A and a rocket on a purple tile">
+<img src="assets/logos/cero.svg" width="164" align="left" alt="Cero logo: a zero shaped as a rocket taking off, on a purple tile">
 
 # Cero
 

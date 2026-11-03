@@ -1,11 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Cero logo: 0 A and a rocket, for Cero a Producción</title>
-<rect width="512" height="512" rx="112" fill="#9879e9"/>
-<ellipse cx="100" cy="256" rx="40" ry="68" fill="none" stroke="#fff" stroke-width="32"/>
-<path d="M168 324 L206 188 L244 324 M181 280 H231" fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
-<g transform="translate(380 256) rotate(45) scale(1.2)">
-<path d="M-20 46 L-10 70 L0 96 L10 70 L20 46 Z" fill="#00e5a8"/>
-<path d="M-22 6 L-46 40 L-46 60 L-20 46 Z M22 6 L46 40 L46 60 L20 46 Z" fill="#fff" fill-opacity=".6"/>
-<path d="M0 -96 C30 -70 32 -20 26 50 H-26 C-32 -20 -30 -70 0 -96 Z" fill="#fff"/>
-<circle cx="0" cy="-26" r="13" fill="#9879e9"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Cero logo: a zero shaped as a rocket taking off</title><rect width="512" height="512" rx="112" fill="#9879e9"/>
+<path d="M222 352 Q256 380 290 352 L256 448 Z" fill="#00e5a8"/>
+<path d="M188 250 L120 340 L120 386 L196 340 Z M324 250 L392 340 L392 386 L316 340 Z" fill="#fff" fill-opacity=".6"/>
+<ellipse cx="256" cy="226" rx="78" ry="128" fill="none" stroke="#fff" stroke-width="52"/>
 </svg>
