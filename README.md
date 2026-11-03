@@ -18,22 +18,12 @@ YouTube.
 This repository is the entry point to the project: the code lives in the repos
 below, and may eventually be merged here as a monorepo.
 
-## Naming
-
-| Name | What it is | Where it appears |
-| --- | --- | --- |
-| **Cero** | The project, and the prefix of every repository (`cero-*`) | Everywhere; the other repos link back here |
-| **Cero a Producción** | The name of the live streaming sessions (Spanish for "Zero to Production") | Only in this repository, with the stream links |
-| **RETO** | The todo / productivity app the project builds | Everywhere; always written in capitals |
-
-Everything else is written in English.
-
 ## The idea behind
 
-The goal is to show an authentic developer experience — every decision a working
-programmer makes on a daily basis with JavaScript and other tools. Expect failing
-tests, refactors, Google and StackOverflow searches, and the eternal struggle of
-naming things.
+The goal was to show an authentic developer experience — every decision a working
+programmer makes on a daily basis with JavaScript and other tools. That meant
+failing tests, refactors, Google and StackOverflow searches, and the eternal
+struggle of naming things.
 
 ## The repositories
 
@@ -54,5 +44,4 @@ the [public demo](https://reto.guillermorodas.com/).
 ### <img src="assets/logos/cero-api.svg" width="40" alt="Cero API logo" align="center"> 3. API — [`cero-api`](https://github.com/glrodasz/cero-api)
 
 The backend, implemented across several stacks as an exercise in comparing them
-(TypeScript, Rust, Go, Python, Elixir, PHP). Work in progress — the web app does
-not consume it yet.
+(TypeScript, Rust, Go, Python, Elixir, PHP).
