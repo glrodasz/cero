@@ -1,8 +1,12 @@
+<img src="assets/logos/cero.svg" width="164" align="left" alt="Cero logo: 0 A and a rocket on a purple tile">
+
 # Cero
 
 0️⃣ 🚀 **Cero** is the project behind **RETO**, a productivity app built from
 scratch to production in public — real decisions, failing tests, refactors and
 all.
+
+<br clear="left">
 
 It started as **Cero a Producción** (Spanish for "Zero to Production"), a series
 of live coding sessions streamed in 🇪🇸 Spanish on Twitch. The sessions built the
