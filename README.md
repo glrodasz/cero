@@ -19,10 +19,10 @@ below, and may eventually be merged here as a monorepo.
 | Name | What it is | Where it appears |
 | --- | --- | --- |
 | **Cero** | The project, and the prefix of every repository (`cero-*`) | Everywhere; the other repos link back here |
-| **Cero a Producción** | The Spanish name of the original live stream series | Only in this repository, with the stream links |
+| **Cero a Producción** | The name of the live streaming sessions (Spanish for "Zero to Production") | Only in this repository, with the stream links |
 | **RETO** | The todo / productivity app the project builds | Everywhere; always written in capitals |
 
-Everything else is written in English. "Cero to Production" is not used.
+Everything else is written in English.
 
 ## The idea behind
 
