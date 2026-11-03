@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 486" width="880" role="img"><style>
+text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+.th { font-size: 14px; font-weight: 600; fill: #F0F6FC; }
+.tm { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; font-size: 13px; font-weight: 500; fill: #F0F6FC; }
+.ts { font-size: 12px; font-weight: 400; fill: #9198A1; }
+.lg { font-size: 12px; fill: #9198A1; }
+rect { stroke-width: 1; }
+.dash > rect { stroke-dasharray: 5 4; }
+.arr { fill: none; stroke: #B4B2A9; stroke-width: 1.25; }
+.arr.llm { stroke-dasharray: 5 4; }
+.mk { fill: none; stroke: #B4B2A9; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+.ct-purple > rect { fill: #26215C; stroke: #7F77DD; }
+.ct-purple > .th { fill: #EEEDFE; }
+.ct-purple > .ts { fill: #AFA9EC; }
+.n-purple > rect { fill: #3C3489; stroke: #AFA9EC; }
+.n-purple > .th, .n-purple > .tm { fill: #EEEDFE; }
+.n-purple > .ts { fill: #CECBF6; }
+.s-purple > rect { fill: #3C3489; stroke: #AFA9EC; }
+.s-purple > .th, .s-purple > .tm { fill: #EEEDFE; }
+.s-purple > .ts { fill: #CECBF6; }
+.e-purple { stroke: #AFA9EC; }
+.k-purple { fill: #3C3489; stroke: #AFA9EC; }
+.ct-teal > rect { fill: #04342C; stroke: #1D9E75; }
+.ct-teal > .th { fill: #E1F5EE; }
+.ct-teal > .ts { fill: #5DCAA5; }
+.n-teal > rect { fill: #085041; stroke: #5DCAA5; }
+.n-teal > .th, .n-teal > .tm { fill: #E1F5EE; }
+.n-teal > .ts { fill: #9FE1CB; }
+.s-teal > rect { fill: #085041; stroke: #5DCAA5; }
+.s-teal > .th, .s-teal > .tm { fill: #E1F5EE; }
+.s-teal > .ts { fill: #9FE1CB; }
+.e-teal { stroke: #5DCAA5; }
+.k-teal { fill: #085041; stroke: #5DCAA5; }
+.ct-coral > rect { fill: #4A1B0C; stroke: #D85A30; }
+.ct-coral > .th { fill: #FAECE7; }
+.ct-coral > .ts { fill: #F0997B; }
+.n-coral > rect { fill: #712B13; stroke: #F0997B; }
+.n-coral > .th, .n-coral > .tm { fill: #FAECE7; }
+.n-coral > .ts { fill: #F5C4B3; }
+.s-coral > rect { fill: #712B13; stroke: #F0997B; }
+.s-coral > .th, .s-coral > .tm { fill: #FAECE7; }
+.s-coral > .ts { fill: #F5C4B3; }
+.e-coral { stroke: #F0997B; }
+.k-coral { fill: #712B13; stroke: #F0997B; }
+.ct-pink > rect { fill: #4B1528; stroke: #D4537E; }
+.ct-pink > .th { fill: #FBEAF0; }
+.ct-pink > .ts { fill: #ED93B1; }
+.n-pink > rect { fill: #72243E; stroke: #ED93B1; }
+.n-pink > .th, .n-pink > .tm { fill: #FBEAF0; }
+.n-pink > .ts { fill: #F4C0D1; }
+.s-pink > rect { fill: #72243E; stroke: #ED93B1; }
+.s-pink > .th, .s-pink > .tm { fill: #FBEAF0; }
+.s-pink > .ts { fill: #F4C0D1; }
+.e-pink { stroke: #ED93B1; }
+.k-pink { fill: #72243E; stroke: #ED93B1; }
+.ct-gray > rect { fill: #2C2C2A; stroke: #888780; }
+.ct-gray > .th { fill: #F1EFE8; }
+.ct-gray > .ts { fill: #B4B2A9; }
+.n-gray > rect { fill: #444441; stroke: #B4B2A9; }
+.n-gray > .th, .n-gray > .tm { fill: #F1EFE8; }
+.n-gray > .ts { fill: #D3D1C7; }
+.s-gray > rect { fill: #444441; stroke: #B4B2A9; }
+.s-gray > .th, .s-gray > .tm { fill: #F1EFE8; }
+.s-gray > .ts { fill: #D3D1C7; }
+.e-gray { stroke: #B4B2A9; }
+.k-gray { fill: #444441; stroke: #B4B2A9; }
+.ct-blue > rect { fill: #042C53; stroke: #378ADD; }
+.ct-blue > .th { fill: #E6F1FB; }
+.ct-blue > .ts { fill: #85B7EB; }
+.n-blue > rect { fill: #0C447C; stroke: #85B7EB; }
+.n-blue > .th, .n-blue > .tm { fill: #E6F1FB; }
+.n-blue > .ts { fill: #B5D4F4; }
+.s-blue > rect { fill: #0C447C; stroke: #85B7EB; }
+.s-blue > .th, .s-blue > .tm { fill: #E6F1FB; }
+.s-blue > .ts { fill: #B5D4F4; }
+.e-blue { stroke: #85B7EB; }
+.k-blue { fill: #0C447C; stroke: #85B7EB; }
+.ct-green > rect { fill: #173404; stroke: #639922; }
+.ct-green > .th { fill: #EAF3DE; }
+.ct-green > .ts { fill: #97C459; }
+.n-green > rect { fill: #27500A; stroke: #97C459; }
+.n-green > .th, .n-green > .tm { fill: #EAF3DE; }
+.n-green > .ts { fill: #C0DD97; }
+.s-green > rect { fill: #27500A; stroke: #97C459; }
+.s-green > .th, .s-green > .tm { fill: #EAF3DE; }
+.s-green > .ts { fill: #C0DD97; }
+.e-green { stroke: #97C459; }
+.k-green { fill: #27500A; stroke: #97C459; }
+.ct-amber > rect { fill: #412402; stroke: #BA7517; }
+.ct-amber > .th { fill: #FAEEDA; }
+.ct-amber > .ts { fill: #EF9F27; }
+.n-amber > rect { fill: #633806; stroke: #EF9F27; }
+.n-amber > .th, .n-amber > .tm { fill: #FAEEDA; }
+.n-amber > .ts { fill: #FAC775; }
+.s-amber > rect { fill: #633806; stroke: #EF9F27; }
+.s-amber > .th, .s-amber > .tm { fill: #FAEEDA; }
+.s-amber > .ts { fill: #FAC775; }
+.e-amber { stroke: #EF9F27; }
+.k-amber { fill: #633806; stroke: #EF9F27; }
+.ct-red > rect { fill: #501313; stroke: #E24B4A; }
+.ct-red > .th { fill: #FCEBEB; }
+.ct-red > .ts { fill: #F09595; }
+.n-red > rect { fill: #791F1F; stroke: #F09595; }
+.n-red > .th, .n-red > .tm { fill: #FCEBEB; }
+.n-red > .ts { fill: #F7C1C1; }
+.s-red > rect { fill: #791F1F; stroke: #F09595; }
+.s-red > .th, .s-red > .tm { fill: #FCEBEB; }
+.s-red > .ts { fill: #F7C1C1; }
+.e-red { stroke: #F09595; }
+.k-red { fill: #791F1F; stroke: #F09595; }
+</style>
+<title>@glrodasz/components system context (C4 level 1)</title>
+<desc>The maintainer builds the UI kit live on stream and a front-end developer installs it and browses its Storybook. The kit publishes releases to npm, deploys its Storybook to Vercel and publishes visual snapshots to Chromatic; the RETO web app, cero-web, uses its components.</desc>
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="mk" d="M2 1L8 5L2 9"/></marker>
+<marker id="al" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="mk e-coral" d="M2 1L8 5L2 9"/></marker>
+</defs>
+
+<g class="s-gray">
+<rect x="120" y="30" width="240" height="64" rx="32"/>
+<text class="th" x="240" y="52" text-anchor="middle" dominant-baseline="central">Maintainer</text>
+<text class="ts" x="240" y="72" text-anchor="middle" dominant-baseline="central">builds it live on stream</text>
+</g>
+<g class="s-gray">
+<rect x="520" y="30" width="240" height="64" rx="32"/>
+<text class="th" x="640" y="52" text-anchor="middle" dominant-baseline="central">Front-end developer</text>
+<text class="ts" x="640" y="72" text-anchor="middle" dominant-baseline="central">builds RETO screens</text>
+</g>
+
+<g class="s-purple">
+<rect x="240" y="190" width="400" height="90" rx="10"/>
+<text class="tm" x="440" y="214" text-anchor="middle" dominant-baseline="central">@glrodasz/components</text>
+<text class="ts" x="440" y="240" text-anchor="middle" dominant-baseline="central">React UI kit, Atomic Design</text>
+<text class="ts" x="440" y="258" text-anchor="middle" dominant-baseline="central">tokens, atoms, molecules, layout</text>
+</g>
+
+<path class="arr" d="M300 94 V188" marker-end="url(#a)"/>
+<text class="ts" x="290" y="141" text-anchor="end" dominant-baseline="central">commits components</text>
+<path class="arr" d="M580 94 V188" marker-end="url(#a)"/>
+<text class="ts" x="590" y="141" dominant-baseline="central">installs, browses Storybook</text>
+
+<g class="s-gray">
+<rect x="30" y="400" width="190" height="64" rx="10"/>
+<text class="th" x="125" y="422" text-anchor="middle" dominant-baseline="central">npm registry</text>
+<text class="ts" x="125" y="442" text-anchor="middle" dominant-baseline="central">versioned package</text>
+</g>
+<g class="s-gray">
+<rect x="240" y="400" width="190" height="64" rx="10"/>
+<text class="th" x="335" y="422" text-anchor="middle" dominant-baseline="central">Vercel</text>
+<text class="ts" x="335" y="442" text-anchor="middle" dominant-baseline="central">hosts the Storybook</text>
+</g>
+<g class="s-gray">
+<rect x="450" y="400" width="190" height="64" rx="10"/>
+<text class="th" x="545" y="422" text-anchor="middle" dominant-baseline="central">Chromatic</text>
+<text class="ts" x="545" y="442" text-anchor="middle" dominant-baseline="central">visual review</text>
+</g>
+<g class="s-teal">
+<rect x="660" y="400" width="190" height="64" rx="10"/>
+<text class="tm" x="755" y="422" text-anchor="middle" dominant-baseline="central">cero-web</text>
+<text class="ts" x="755" y="442" text-anchor="middle" dominant-baseline="central">RETO web app</text>
+</g>
+
+<path class="arr" d="M270 280 V330 H125 V398" marker-end="url(#a)"/>
+<text class="ts" x="134" y="316" dominant-baseline="central">publishes releases</text>
+<path class="arr" d="M380 280 V398" marker-end="url(#a)"/>
+<text class="ts" x="372" y="364" text-anchor="end" dominant-baseline="central">deploys Storybook</text>
+<path class="arr" d="M500 280 V398" marker-end="url(#a)"/>
+<text class="ts" x="508" y="364" dominant-baseline="central">uploads snapshots</text>
+<path class="arr" d="M755 400 V330 H610 V282" marker-end="url(#a)"/>
+<text class="ts" x="746" y="316" text-anchor="end" dominant-baseline="central">uses components</text>
+</svg>
