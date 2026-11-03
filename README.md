@@ -13,7 +13,7 @@ of live coding sessions streamed in 🇪🇸 Spanish on Twitch. The sessions bui
 components library and the web app, and started the API. The recordings are on
 YouTube.
 
-📺 [YouTube](https://glrz.me/youtube-cero) · 🟣 [Twitch](https://glrz.me/stream)
+📺 [YouTube](https://germo.me/youtube-cero) · 🟣 [Twitch](https://germo.me/stream)
 
 This repository is the entry point to the project: the code lives in the repos
 below, and may eventually be merged here as a monorepo.
